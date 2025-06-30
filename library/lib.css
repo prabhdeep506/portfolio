@@ -1,0 +1,754 @@
+* {
+    transition: all ease-in-out 0.5s;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main {
+    width: 100%;
+    height: 725px;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    top: 0px;
+}
+
+.lib {
+    width: 100%;
+    height: 725px;
+    background-color: aquamarine;
+}
+
+.box {
+    position: relative;
+
+
+
+    background: #f0f0f0;
+    /* margin: 50px; */
+}
+
+.box::before,
+.box::after,
+.box .vborder::before,
+.box .vborder::after {
+    content: "";
+    position: absolute;
+    background: rgb(27, 103, 42);
+    transition: transform 0.4s ease;
+}
+
+.box::before {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.box::after {
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+/* Vertical borders (left & right) */
+.box .vborder::before {
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: center;
+}
+
+.box .vborder::after {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: center;
+}
+
+.box:hover::before,
+.box:hover::after {
+    transform: scaleX(1);
+}
+
+.box:hover .vborder::before,
+.box:hover .vborder::after {
+    transform: scaleY(1);
+}
+
+.upper {
+
+    width: 200px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+
+}
+ 
+.one {
+    width: 200px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    background-color: rgb(192, 211, 22);
+    padding: 3px;
+
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.two {
+    width: 200px;
+    height: 35px;
+    color: rgb(26, 23, 19);
+    font-size: 34px;
+    background-color: darkcyan;
+    padding: 3px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.true {
+    font-size: medium;
+    margin-bottom: 50px;
+    color: gray;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("libmain.jpg");
+    background-size: cover;
+}
+
+.this {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(60, 60, 60);
+    margin-bottom: 40px;
+
+
+}
+
+
+
+.thiss {
+    color: rgb(26, 23, 19);
+    font-size: 75px;
+    /* background-color: darkcyan; */
+    color: rgb(53, 53, 53);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+
+
+}
+
+.btn {
+    width: 600px;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn1 {
+    font-size: 22px;
+    color: black;
+    border: 1px gray solid;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn2 {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 9px;
+    background-color: rgb(68, 104, 14);
+}
+
+.btn3 {
+    font-size: 22px;
+    color: black;
+    border: 1px gray solid;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.second {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.onee {
+    width: 100px;
+    color: rgb(52, 52, 52);
+    height: 40px;
+    margin-bottom: 90px;
+    font-size: 20px;
+    margin-left: 40px;
+    position: absolute;
+    font-family: calc(1px);
+
+}
+
+.twooo {
+    width: 400px;
+    color: rgb(84, 84, 84);
+    height: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: calc();
+
+}
+
+.boxx {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    width: 30%;
+    height: 350px;
+    background-color: rgb(250, 250, 250);
+}
+
+.text {
+    width: 30%;
+    height: 350px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(67, 66, 64);
+    margin-left: 90px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.pic {
+    width: 600px;
+    height: 400px;
+}
+
+.abc {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 44, 66);
+}
+
+.small {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: rgb(225, 225, 225);
+}
+
+.libhub {
+    text-align: center;
+}
+
+.para {
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.member {
+    background-color: yellowgreen;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.mid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middle {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bookk {
+    width: 100%;
+    height: 90%;
+    /* background-color: #81616169; */
+    /* border: 3px solid #28005d69; */
+    flex-direction: column;
+
+
+}
+
+.gate:hover {
+    filter: blur(0px);
+    filter: opacity(1px);
+}
+
+.nap {
+    color: white;
+    font-size: 20px;
+    background: rgba(35, 35, 35, 0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    display: flex;
+    filter: blur(20px);
+    filter: opacity(0);
+    position: absolute;
+
+}
+
+.gate {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    width: 200px;
+    height: 265px;
+    /* overflow: hidden; */
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .div {
+     width: 205px;
+     height: 30px;
+     background-color: rgb(36, 44, 66);
+     font-size: medium;
+     color: #ced4da;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     margin-top: 5;
+ } */
+
+.revieww {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+}
+
+.email {
+    width: 200px;
+    height: 20px;
+    margin-right: 80px;
+    margin-top: 10px;
+    background-color: #ced4da;
+}
+
+.review {
+    font-size: 35px;
+    color: black;
+    font-family: serif;
+}
+
+.border {
+    width: 20px;
+    border: 2px rgb(68, 68, 68) solid;
+    height: 2px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.view {
+    font-size: 15px;
+    color: black;
+    margin-top: 5px;
+    font-family: serif;
+}
+
+/* .box {
+     width: 100%;
+     height: 350px;
+     background-color: rgb(247, 247, 247);
+     justify-content: space-evenly;
+     display: flex;
+     align-items: center;
+ } */
+
+.box1 {
+    width: 50%;
+    border: rgb(135, 134, 134) 1px solid;
+    height: 240px;
+    justify-content: space-evenly;
+    background-color: white;
+    flex-direction: column;
+}
+
+.big {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 50;
+    display: none;
+    overflow: hidden;
+    /* margin: 10px ; */
+    justify-content: center;
+}
+
+/* .demo{
+    width: 100px;
+    height: 100px;
+    /* background-color: yellow; */
+
+}
+
+*/
+/* .summary{
+    width: auto;
+    height: auto;margin-top: 200px;
+ } */
+
+.bigimg {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.fa-solid fa-star {
+    color: yellow;
+}
+
+.bigdiv {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(36, 44, 66);
+    margin-top: 95px;
+    display: flex;
+
+}
+
+.dem0o {
+    background-color: rgb(240, 241, 239);
+    color: black;
+
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+
+.col .image {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.col .image:hover {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.imghover:hover img {
+    transform: scale(1.2);
+
+
+}
+
+.imghover {
+    overflow: hidden;
+    transition: all ease-in-out 2s;
+
+}
+
+.bigg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigg .biggimg {
+    width: auto;
+    height: 80%;
+}
+
+.mainmenu {
+    width: 20%;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event {
+    width: 20%;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventt {
+    width: 25%;
+    height: 200px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width:640px) {
+
+
+    .content {
+        width: 100%; gap: 0px;
+        height: 300px;
+        background-color: red;
+    }
+
+    .upper {
+
+        width: 100px;
+        /* background-color: red; */
+        height: 0px;
+        left: 0px;
+        top: 0px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .one {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+
+    }
+
+    .two {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .true {
+        font-size: 10px;
+        margin-top: 10px;
+        /* display: none; */
+        color: gray;
+    }
+
+    .this {
+        font-size: 10px;
+        font-weight: lighter;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(60, 60, 60);
+        margin-bottom: 0px;
+
+
+    }
+
+    .thiss{
+    font-size: 23px;
+    color: rgb(53, 53, 53);
+    margin-top: 10px;
+    
+    }
+
+    
+.btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.btn1 {
+    font-size: 6px;
+    color: black;
+    border: 1px gray solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn2 {
+    font-size: 6px;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 9px;
+    background-color: rgb(68, 104, 14);
+}
+
+.btn3 {
+    font-size: 6px;
+    color: black;
+    border: 1px gray solid;
+    padding: 5px;
+    cursor: pointer;
+}
+.boxx {
+    width: 100%;
+    height: 100px;
+}
+.boxxx{
+    flex-direction: column;
+     display: flex;
+    align-items: center;
+    /* background-color: red; */
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    justify-content: center;
+}
+/* .pic {
+    width: 700px;
+    height: 400px;
+} */
+.photo {
+    width: 90%;
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+.text {
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    /* background-color: rgb(250, 250, 250); */
+    color: rgb(67, 66, 64);
+    margin-left: 0px;
+    font-size: 10px;
+    margin-top: 0px;
+}
+.second{
+    height: 130px;
+     /* background-color: rgb(24, 22, 22); */
+}
+ .middle {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .gate {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .bookk {
+        width: 70%;
+        height: auto;
+    }
+
+    .nap {
+        font-size: 16px;
+        filter: none;
+    }
+
+    .div {
+        font-size: 16px;
+    }
+}
+

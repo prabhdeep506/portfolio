@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Member Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('library1.jpg');">
+
+    <div class="min-h-screen w-100 flex flex-col items-center justify-center bg-black bg-opacity-40">
+
+        <!-- LIB HUB Top Section -->
+        <div class=" overflow-hidden  text-white text-lg sm:text-xl font-serif font-bold flex justify-center items-center ">
+            <a href="lib.htm">
+                <div class="bg-lime-400 text-white opacity-2 px-4 py-2 sm:px-6 sm:py-3">LIB</div>
+            </a>
+            <a href="lib.htm">
+                <div class="bg-cyan-800 px-4 py-2 sm:px-6 sm:py-3">HUB</div>
+            </a>
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-full max-w-xl p-10 bg-black bg-opacity-50 text-white rounded-lg shadow-lg mt-6">
+            <h2 class="text-3xl font-semibold text-center mb-8">Library Member Login Form</h2>
+
+            <!-- Form Start -->
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name"
+                        class="mt-1 w-full px-4 py-2 bg-transparent border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email"
+                        class="mt-1 w-full px-4 py-2 bg-transparent border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium">Password</label>
+                    <input type="password" id="password"
+                        class="mt-1 w-full px-4 py-2 bg-transparent border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Enter your password" required>
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-sm font-medium">Phone Number</label>
+                    <input type="tel" id="phone"
+                        class="mt-1 w-full px-4 py-2 bg-transparent border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-white"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-white text-black py-2 rounded hover:bg-gray-300 transition">Submit</button>
+            </form>
+            <!-- Form End -->
+
+            <p class="mt-6 text-sm text-center">By submitting this form, you agree to our <a href="#"
+                    class="underline">Terms</a>.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
