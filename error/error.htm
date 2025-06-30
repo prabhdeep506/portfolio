@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #0a0a1f 0%, #000 100%);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .robot {
+      width: 200px;
+      margin: 2rem auto;
+      animation: float 3s ease-in-out infinite, glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes glow {
+      from {
+        filter: drop-shadow(0 0 10px #00f0ff);
+      }
+      to {
+        filter: drop-shadow(0 0 25px #00f0ff);
+      }
+    }
+
+    button {
+      background-color: #00f0ff;
+      color: #000;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00f0ff;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00c2d3;
+      box-shadow: 0 0 30px #00f0ff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 4rem;
+      }
+      .robot {
+        width: 150px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Oops! Page Not Found</p>
+    <img src="robot.png" alt="Robot" class="robot" />
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <button onclick="goHome()">Go Home</button>
+  </div>
+
+  <script>
+    function goHome() {
+      window.location.href = "/";
+    }
+     
+  </script>
+</body>
+</html>
