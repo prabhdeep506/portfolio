@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet</title>
+    <style>
+        .img {
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .demo {
+            border: 0.5px rgb(211, 211, 211) solid;
+            transition: 0.2s;
+        }
+
+        .animal {
+            border: 2px solid rgb(37, 121, 176);
+        }
+
+        .demo1 {
+            border-radius: 60px;
+        }
+
+        .imgg {
+            border-radius: 60px;
+        }
+
+        
+  .b1 {
+            width: 100%;
+            height: 50px;
+            /* background-color: rgb(190, 185, 185); */
+            /* text-align: center; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            align-items: center;
+            text-align: start;
+        }
+
+        .b11 {
+            width: 90%;
+            margin-left: 120px;
+            height: auto;
+            /* background-color: rgb(255, 0, 0); */
+            text-align: start;
+            flex-direction: row;
+            color: gray;
+            font-size: 16px;
+            padding: 12px;
+            justify-content: center;
+
+
+            align-items: center;
+        }
+
+        .bt {
+            /* margin-right: 65%; */
+        }
+
+        .b {
+            width: 100%;
+
+            height: 50px;
+            overflow: hidden;
+            /* background-color: #f1c40f; */
+        }
+
+        .bb {
+            height: auto;
+        }
+        @media (max-width: 640px) {
+    .img {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .b11 {
+        width: 90%;
+        margin-left: 10px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .b1 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .bt {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Tablet: 641px to 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .b11 {
+        width: 90%;
+        margin-left: 30px;
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .bt {
+        font-size: 18px;
+    }
+}
+
+/* Desktop: min-width 1025px to 1920px */
+@media (min-width: 1025px) {
+    .img {
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .b11 {
+        width: 90%;
+        margin-left: 120px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .bt {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1920px) {
+    .img {
+        width: 450px;
+        height: 450px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .b11 {
+        width: 90%;
+        margin-left: 180px;
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .bt {
+        font-size: 22px;
+    }
+}
+
+       
+    </style>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/531c580fb9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="h-screen">
+    <div class="    flex justify-between items-center p-4 md:p-6 bg-white shadow-md ">
+        <div class=" text-3xl  w-300  items-center text-blue-900 font-mediummd:w-200 text- 2xl "><b>LITTLE PAW</b></div>
+
+        <button class=" bg-black p-3 rounded-xl text-white md:py-1">CALL NOW</button>
+        <div class="iconbox w-50 flex justify-evenly ">
+            <i class="fa-solid fa-truck-fast icon"></i>
+            <!-- <i class="fa-solid fa-phone icon"></i> -->
+            <i class="fa-solid fa-bag-shopping icon"></i>
+            <i class="fa-regular fa-user icon"></i>
+        </div>
+
+
+    </div>
+    <div class=" bg-gradient-to-t to-blue-100 from bg-white-400 w-full h-auto max-h-40">
+        <marquee>
+            <div class=" text-[50px]   p-10 md:text-2xl">Best Vet Doctors in Delhi - Comprehensive 24/7 Care &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Best Vet Doctors in Delhi - Comprehensive 24/7
+                Care</div>
+        </marquee>
+        <span class="ml-80 mt-50 text-red-400 text-2xl">❤️</span>
+        <span class=" text-red-400 text-xl">❤️</span>
+        <span class=" text-red-400 text-lg">❤️</span>
+
+        <div class=" text-3xl   ml-80 mt-8  flex">Flat <Br>30% off</div>
+
+        <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-lg ml-20 mt-10">
+            <div class="mb-5" id="name" >
+                <label class="block text-gray-700 font-semibold mb-1">Enter Your Name</label>
+                <input type="text" placeholder="Fullname" id="name1"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-8" id="phone"> 
+                <label  class="block text-gray-700 font-semibold mb-1">Enter Phone Number</label>
+                <input type="tel" placeholder="Phone Number" id="phone1"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <button id="demoo"
+                class="w-full flex items-center justify-center gap-2 bg-gray-900 text-white font-semibold py-3 rounded-lg hover:bg-gray-800 transition">
+                ⚡ Book Appointment
+            </button>
+
+            <div class="mt-4 text-center text-gray-600 text-sm">
+                ⭐ <span class="text-yellow-500 font-semibold">4.9</span> in
+                <span class="text-red-500">Google</span> Ratings |
+                <span class="font-semibold">70,000+</span> Happy Pet Parents
+            </div>
+        </div>
+
+
+    </div>
+    <div class="img">
+        <img src="Dog_Consultation.webp" class="img  ml-280 absolute bottom-40 right-50">
+    </div>
+    <div class=" text-center text-2xl text-blue-900 mt-20">Expert Veterinary Care at just <b>₹499 </b></div><br>
+    <div class="bg-gradient-to-b to-blue-100 from bg-white w-full h-fit  ">
+        <p class="text-3xl p-20 font-bold">Top-quality & expert veterinary services in Delhi</p>
+        <div class="justify-center items-center flex">
+            <button class="bg-black  text-white justify-center items-center px-4 py-2 m-1 rounded hover:bg-gray-500">Pet
+                Doctor Consultation</button>
+            <button
+                class="bg-white text-xl justify-center items-center px-4 py-1 m-1 border-2-black hover:bg-gray-400 ">Pet
+                Vaccination</button>
+        </div>
+        <div class=" flex justify-center m-4">
+            <div class="w-120 h-160 bg-white m-1 hover:shadow-2xl demo">
+                <p class="text-2xl p-5"> Starts At ₹499 </p>
+
+                <img src="vet1.jpg" class="vet w-100 h-70 ml-10 p-5">
+                <p class=" ml-2 p-3 text-[15px]">Other Services</p>
+
+                <p class="  ml-5 p-3 text-[15px]"> <i class="fa-solid fa-shield-dog"></i> • Comprehensive Pet Healthcare
+                    Services</p>
+
+                <p class="  ml-5 p-3 text-[15px]"> • Pet Pharmacy</p>
+
+                <p class="  ml-5 p-3 text-[15px]">• Pet Diagnostics</p>
+
+                <p class="  ml-5 p-3 text-[15px]">• Pet Emergency Care</p>
+                <button class="w-fit p-2 bg-black text-white text-end ml-90 rounded">Book Now</button>
+
+
+            </div>
+            <div class=" w-120 h-160 bg-white m-1 hover:shadow-2xl demo">
+
+                <p class=" text-xl p-5">Starts At ₹560</p>
+
+                <img src="vet2.jpg" class="vet w-100 h-70 ml-10 p-5">
+
+                <p class=" ml-2 p-3 text-[15px]"> Other Services</p>
+
+                <p class="  ml-5 p-3 text-[15px]"> • All Pet Eseential Vaccines</p>
+
+                <p class=" ml-5  p-3 text-[15px]">• Anti-Rabbies/ DHPPil</p>
+
+                <p class="  ml-5 p-3 text-[15px]">• Deworming</p>
+
+                <p class="  ml-5 p-3 text-[15px]">• Pocket-Friendly Vaccination Packages</p>
+                <button class="w-fit p-2 bg-black text-white text-end ml-90 rounded">Book Now</button>
+
+            </div>
+        </div>
+        <div class="w-full h-150 bg-gradient-to-t to-blue-50 from bg-white -200 flex justify-center items-center">
+            <div class="w-300 h-120">
+                <p class="text-2xl font-medium p-10 text-center">Meet Our Expert and Compassionate Dog Doctors - Waiting
+                    for Your
+                    Furry Friends!
+                </p>
+                <img src="animal.jpg" class="w-300 h-110 rounded-2xl animal ">
+            </div>
+        </div>
+
+        <div class=" w-full h-120 flex justify-evenly items-center py-6 bg-gradient-to-b to-blue-100 from bg-white">
+            <!-- Doctor 1 -->
+            <div class="w-60 h-65 flex flex-col items-center p-4 rounded-lg shadow-lg bg-white">
+                <img src="dr1.jpg" class="w-32 h-32 rounded-full">
+                <p class="text-center mt-2 text-lg font-semibold">Dr. Raj Kalra</p>
+                <p class="text-center text-gray-700 text-sm">Experience <b>3+ Years</b></p>
+                <p class="text-center text-gray-700 text-sm">Pet's Treated <b>250</b></p>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="w-60 h-65 flex flex-col items-center p-4 rounded-lg shadow-lg  bg-white ">
+                <img src="dr2.jpg" class="w-32 h-32 rounded-full">
+                <p class="text-center mt-2 text-lg font-semibold">Dr. Chethan BS</p>
+                <p class="text-center text-gray-700 text-sm">Experience <b>3+ Years</b></p>
+                <p class="text-center text-gray-700 text-sm">Pet's Treated <b>334</b></p>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="w-60 h-65 flex flex-col items-center p-4 rounded-lg shadow-lg bg-white">
+                <img src="dr3.jpg" class="w-32 h-32 rounded-full">
+                <p class="text-center mt-2 text-lg font-semibold">Dr. Neeraj Yadav</p>
+                <p class="text-center text-gray-700 text-sm">Experience <b>3+ Years</b></p>
+                <p class="text-center text-gray-700 text-sm">Pet's Treated <b>287</b></p>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="w-60 h-65 flex flex-col items-center p-4 rounded-lg shadow-lg  bg-white">
+                <img src="dr4.jpg" class="w-32 h-32 rounded-full">
+                <p class="text-center mt-2 text-lg font-semibold">Dr. Mohar Singh</p>
+                <p class="text-center text-gray-700 text-sm">Experience <b>2+ Years</b></p>
+                <p class="text-center text-gray-700 text-sm">Pet's Treated <b>235</b></p>
+            </div>
+        </div>
+
+        <div class=" text-center text-2xl text-blue-900 "><b>About Us</b></div>
+        <br><br>
+    </div>
+    <div class="bg-gradient-to-b to-white from bg-blue-100 ">
+        <div class=" text-center text-[15px] font-light text-gray-500 "><b>Click to See The Answer</b></div>
+
+        <div class="b " id="b">
+            <div class="b1">
+                <p class="bt">What can i Expect From LittlePaw Online Vet Consultation?</p>
+            </div>
+            <div class="b11">
+                <!-- CAN I CONSULT FOR MY DOG PET ? -->
+                littlepaw online vet consultation offers convenient and reliable veterinary care for your pet from the
+                comfort of your own home. When you book a consultation, you can expect the following:
+                1. Book your consultation: You can easily book a consultation on our website or through our mobile app.
+                Choose a convenient time slot that works for you and your pet.
+                2. Within 10 minutes, our vet will call you: Our experienced and qualified veterinarians will call you
+                within 10 minutes of your scheduled consultation time. If you book a later time slot, our vet will call
+                you
+                at the scheduled time.They will listen attentively to your concerns, ask relevant questions, and provide
+                expert advice on your pet's health.
+                3. A prescription will be sent along with a link from where you can order medicines at 10% off: If your
+                pet
+                requires medication, our vet will issue a prescription. You will receive the prescription via WhatsApp,
+                along with a link to order the medicines from our trusted pharmacy partner at a discounted rate of 10%
+                off.
+                4. Get same-day delivery on medicines: We understand the importance of timely medication for your pet's
+                health. That's why our pharmacy partner offers same-day delivery of medicines, ensuring that your pet
+                gets
+                the required treatment as soon as possible.
+            </div>
+        </div>
+
+
+        <div class="b " id="b1">
+            <div class="b1">
+                <p class="bt">What happens after consultation with the vet?</p>
+            </div>
+            <div class="b11">
+                <!-- CAN I CONSULT FOR MY DOG PET ? -->
+                Once your session with the vet is complete, we’ll share the post consultation kit with you. This
+                includes
+                1. Medical records, treatment plan and prescription
+                2. A complimentary pet health report
+                3. Complimentary 10% off and free delivery on medicines purchased
+            </div>
+        </div>
+
+
+
+        <div class="b" id="b2">
+            <div class="b1">
+                <p class="bt">Can online vet consultations diagnose my pet's condition accurately?</p>
+            </div>
+            <div class="b11">
+                Our vets are rigorously trained to provide you with the best experience and treatment. With an average
+                rating of 4.96 in 35k+ consultations, and an extremely high recovery rate, our online consultations are
+                as
+                good as they can be.
+            </div>
+        </div>
+
+        <div class="b" id="b3">
+            <div class="b1">
+                <p class="bt">My pet is difficult to handle. How will I medicate it at home?</p>
+            </div>
+            <div class="b11">
+                Yes, minor issues can often be a precursor to a deeper problem. Our vets will be able to identify any
+                issues that are ongoing, and provide you with an optimum solution. Additionally, you can chat with a vet
+                for an initial assessment.
+
+            </div>
+        </div>
+
+        <div class="b" id="b4">
+            <div class="b1">
+                <p class="bt">Are online veterinary consultations suitable for behavioural issues in pets?</p>
+            </div>
+            <div class="b11">
+                Online veterinary consultations can assist with mild to moderate behavioural issues, general advice, and
+                training tips, including identifying triggers, environmental enrichment, and training exercises. Severe
+                issues may require in-person consultation with a veterinary behaviourist or certified dog trainer.
+
+            </div>
+        </div>
+
+        <div class="b" id="b5">
+            <div class="b1">
+                <p class="bt">Is online veterinary consultation available for all pets?</p>
+            </div>
+            <div class="b11">
+                Our vets are trained to treat any species or breed of pets, including but not limited to dogs, cats,
+                guinea pigs, rabbits, hamsters, and even fish. Any pet requiring veterinary care can benefit from an
+                online consultation, provided the condition is diagnosable and treatable remotely.
+            </div>
+        </div>
+
+        <div class="b" id="b6">
+            <div class="b1">
+                <p class="bt">Are veterinary consultations covered by pet insurance?</p>
+            </div>
+            <div class="b11">
+                Yes, in most cases, pet insurance policies cover the cost of veterinary consultations, including online
+                veterinary consultations. However, it's important to note that the level of coverage may vary depending
+                on the specific policy and the insurance provider.
+
+            </div>
+        </div>
+
+        <div class="b" id="b7">
+            <div class="b1">
+                <p class="bt">In case of an emergency. What do I do?</p>
+            </div>
+            <div class="b11">
+                In an emergency, we recommend that you visit the closest veterinary hospital or clinic where a
+                veterinarian can physically examine your pet, and time-sensitive treatment can be started.
+
+            </div>
+        </div>
+
+
+    </div>
+    <br><br>
+    <br><br>
+
+    <footer class="bg-gradient-to-t from-white to-white text-gray-700">
+        <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Brand -->
+            <div>
+                <h2 class="text-2xl font-bold text-blue-600">VetCare</h2>
+                <p class="mt-2 text-sm">
+                    Caring for your furry friends with love and expertise.
+                </p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-blue-500 mb-3">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">About</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-blue-500 mb-3">Contact Us</h3>
+                <p class="text-sm">123 Pet Street, Animal Town</p>
+                <p class="text-sm">Email: hello@vetcare.com</p>
+                <p class="text-sm">Phone: +1 (234) 567-8901</p>
+            </div>
+
+        </div>
+
+        <div class="text-center text-sm border-t border-blue-200 py-4">
+            © 2025 VetCare. All rights reserved.
+        </div>
+    </footer>
+
+
+    </div>
+    </div>  
+
+</body>
+
+</html>
