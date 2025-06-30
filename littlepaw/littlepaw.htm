@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="littlepaw.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Paw</title>
+  <script src="https://kit.fontawesome.com/531c580fb9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0 font-sans">
+
+  <!-- Marquee Banner -->
+  <div class="flex flex-wrap justify-center items-center w-full bg-white h-10 overflow-x-auto whitespace-nowrap px-2">
+    <marquee class="w-full">
+      <div class="w-full font-semibold text-blue-900 text-sm md:text-base text-center">
+        20% Off on Pet Treats. Click Here! &nbsp;&nbsp;&nbsp; Customer Support: 080696 5551 &nbsp;&nbsp;&nbsp;
+        Time: 9:30AM to 7:00 PM
+      </div>
+    </marquee>
+  </div>
+
+  <!-- Header Section -->
+  <div class="w-full bg-[#082c54] flex flex-wrap justify-evenly items-center px-4 py-2">
+
+    <!-- Logo + Name -->
+    <div class="flex items-center w-1/2 sm:w-1/4 md:w-1/6">
+      <img src="dog.png" alt="logo" class="w-16 h-16 rounded-full">
+      <div class="text-white font-bold text-lg md:text-xl ml-2">LITTLE PAW</div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="w-full sm:w-1/2 md:w-2/5 mt-2 md:mt-0">
+      <div class="text-center text-gray-500 text-base md:text-lg px-3 py-2 bg-white font-sans relative">
+        Search For Best Foods For Pet
+        <i
+          class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600  px-2 py-1 rounded-md"></i>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="flex items-center justify-center w-full sm:w-auto mt-2 md:mt-0 text-white">
+      <i class="fa-solid fa-location-dot text-white mr-2"></i>
+      <p>110018, NEW DELHI</p>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex justify-evenly items-center w-full sm:w-auto gap-4 mt-2 md:mt-0 text-white">
+      <i class="fa-solid fa-truck-fast"></i>
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+      <i class="fa-regular fa-user"></i>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <div
+    class="w-full bg-white flex flex-wrap justify-center md:justify-around items-center text-base md:text-lg py-3 px-4">
+
+    <!-- Dogs Dropdown -->
+    <div class="relative group">
+      <div class="cursor-pointer text-xl">Dogs ▼</div>
+      <div
+        class="absolute left-0 mt-3 bg-white text-black shadow-lg rounded-md w-[800px] p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+        <div class="grid grid-cols-4 gap-6">
+          <div>
+            <h3 class="font-bold text-red-600">FOOD</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Dry Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Puppy Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Wet Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Prescription Food</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">TREATS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Meaty Treat</a></li>
+              <li><a href="#" class="hover:text-blue-500">Crunchy Treats</a></li>
+              <li><a href="#" class="hover:text-blue-500">Dental Treats</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">GROOMING</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Shampoos</a></li>
+              <li><a href="#" class="hover:text-blue-500">Brushes & Combs</a></li>
+              <li><a href="#" class="hover:text-blue-500">Nail Clippers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">TOYS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Chew Toys</a></li>
+              <li><a href="#" class="hover:text-blue-500">Interactive Toys</a></li>
+              <li><a href="#" class="hover:text-blue-500">Squeaky Toys</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cats Dropdown -->
+    <div class="relative group">
+      <div class="cursor-pointer  text-xl">Cats ▼</div>
+      <div
+        class="absolute left-0 mt-3 bg-white text-black shadow-lg rounded-md w-[800px] p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+        <div class="grid grid-cols-4 gap-6">
+          <div>
+            <h3 class="font-bold text-red-600">FOOD</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Dry Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Kitten Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Wet Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Prescription Food</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class=" text-red-600">TREATS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Meaty Treat</a></li>
+              <li><a href="#" class="hover:text-blue-500">Crunchy Treats</a></li>
+              <li><a href="#" class="hover:text-blue-500">Creamy Treats</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">LITTER & ACCESSORIES</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Litter</a></li>
+              <li><a href="#" class="hover:text-blue-500">Litter Tray</a></li>
+              <li><a href="#" class="hover:text-blue-500">Litter Scoops</a></li>
+              <li><a href="#" class="hover:text-blue-500">Stain & Odour Remover</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">TOYS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Catnip</a></li>
+              <li><a href="#" class="hover:text-blue-500">Interactive Toys</a></li>
+              <li><a href="#" class="hover:text-blue-500">Teasers & Wands</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small Pets Dropdown -->
+    <div class="relative group">
+      <div class="cursor-pointer  text-xl">Small Pets ▼</div>
+      <div
+        class="absolute left-0 mt-3 bg-white text-black shadow-lg rounded-md w-[800px] p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+        <div class="grid grid-cols-4 gap-6">
+          <div>
+            <h3 class="font-bold text-red-600">FOOD</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Dry Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Puppy Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Wet Food</a></li>
+              <li><a href="#" class="hover:text-blue-500">Prescription Food</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-red-600">TREATS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Meaty Treat</a></li>
+              <li><a href="#" class="hover:text-blue-500">Crunchy Treats</a></li>
+              <li><a href="#" class="hover:text-blue-500">Dental Treats</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">GROOMING</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Shampoos</a></li>
+              <li><a href="#" class="hover:text-blue-500">Brushes & Combs</a></li>
+              <li><a href="#" class="hover:text-blue-500">Nail Clippers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-red-600">TOYS</h3>
+            <ul class="mt-2 space-y-1 text-sm">
+              <li><a href="#" class="hover:text-blue-500">Chew Toys</a></li>
+              <li><a href="#" class="hover:text-blue-500">Interactive Toys</a></li>
+              <li><a href="#" class="hover:text-blue-500">Squeaky Toys</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group">
+      <a href="../../../Tailwind/vet.html">
+        <div class="demo cursor-pointer flex items-center space-x-2  text-xl">Vet Care </div>
+      </a>
+     
+    </div>
+
+    
+    <a href="../../../Tailwind/pharmacy.html">
+      <div class="cursor-pointer hover:text-cyan-700 text-xl">Pharmacy</div>
+    </a>
+    <div class=" demo cursor-pointer hover:text-cyan-700  text-xl">Pet Friendly Villas</div>
+    <div class=" demo cursor-pointer hover:text-cyan-700  text-xl">From Stayvista</div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="thirdbox">
+  <img src="pet1.webp" class="catt">
+</div>
+<div class="thirdbox mt-5">
+  <div class="boxxx">
+    <img src="pet3.webp" class="cat">
+  </div>
+</div>
+
+</div>
+<div class="categories">Popular Categories</div>
+
+
+<div class="gallerybox">
+  <div class="fifthbox">
+    <div class="imgbox">
+      
+        <img src="catfood.jpg" class="frame">
+        <p>Cat Food</p>
+      </div>
+    
+
+
+    <div class="imgbox">
+      <img src="catfood.jpg" class="frame">
+      <p>Cat Food</p>
+    </div>
+    <div class="imgbox">
+      <img src="dogtreat.jpg" class="frame">
+      <p>Dog Treats</p>
+    </div>
+    <div class="imgbox">
+      <img src="cat treat.jpg" class="frame">
+      <p>Cat Treats</p>
+    </div>
+    <div class="imgbox">
+      <img src="toy.jpg" class="frame">
+      <p>Pet Toys</p>
+    </div>
+    <div class="imgbox">
+      <img src="litter.jpg" class="frame">
+      <p>Litter & Supplies</p>
+    </div>
+  </div>
+
+
+
+
+  <div class="fifthbox">
+
+
+    <div class="imgbox"><img src="clean.jpg" class="frame">
+      <p>Healt & Wellness</p>
+    </div>
+    <div class="imgbox"><img src="bed.jpg" class="frame">
+      <p>Beds & Mats</p>
+    </div>
+
+    <div class="imgbox"> <img src="grooming.jpg" class="frame">
+      <p>Grooming</p>
+    </div>
+    <div class="imgbox"> <img src="belt.jpg" class="frame">
+      <p>Walk Essentials</p>
+    </div>
+    <div class="imgbox"> <img src="bowl.jpg" class="frame">
+      <p>Bowls & Feeders</p>
+    </div>
+    <div class="imgbox"> <img src="cloth.jpg" class="frame">
+      <p>Monsoon Essentials</p>
+    </div>
+  </div>
+</div>
+
+<div class="full">
+  <img src="pet42.webp" class="full-img">
+</div>
+
+
+<br>
+<h1 class="text-center text-xl sm:text-2xl  md:text-3xl lg:text-4xl ">Learn Pet Parenting Here!</h1>
+
+<br>
+<hr class="w-full">
+
+<main class="content">
+  <section class="main-banner">
+    <img src="paw.webp" alt="Natural Anxiety Relief For Dogs">
+    <div class="banner-text">
+
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="dog1">
+      <img src="dog1.webp" alt="Custom Accessories" class="dog-img">
+      <p class="dog-text">Style Your Pet with Custom Accessories!</p>
+    </div>
+    <div class="dog1">
+      <img src="dog2.webp" alt="Cool Accessories" class="dog-img">
+      <p class="dog-text">Dress Your Dog with Cool Custom Accessories!</p>
+    </div>
+    <div class="dog1">
+      <img src="dog3.webp" alt="Pet ID Tag" class="dog-img">
+      <p class="dog-text">Why Your Pet Needs a Personalized ID Tag</p>
+    </div>
+    <div class="dog1">
+      <img src="dog4.webp" alt="Interactive Dog Toys" class="dog-img">
+      <p class="dog-text">Best Interactive Dog Toys: Our top picks 2024</p>
+    </div>
+  </aside>
+</main>
+<br>
+<div class="thirdbox">
+  <img src="Dog-Bandana-Web_1920x.webp" class="catt">
+</div>
+<br>
+<br>
+
+<div class="thirdbox">
+  <img src="hoodie.webp" class="cattt">
+</div>
+
+<p class="shop">Shop Us Now!</p>
+<br><br>
+<div class="products">
+  <!-- <div class="save">SAVE ₹400</div> -->
+
+  <div class="petbox ">
+    <div class="save">SAVE ₹400</div>
+
+    <img src="clothpet.webp" class="cloth-pet">
+    <div class="text">
+      LITTLE PAW</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+
+    <img src="clothpet2.webp" class="cloth-pet">
+    <div class="text">
+      LITTLE PAW</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+
+
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+    <img src="clothpet3.webp" class="cloth-pet">
+
+    <div class="text">
+      LITTLE PAW</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+
+
+    <img src="clothpet4.webp" class="cloth-pet">
+    <div class="text">
+      LITTLE PAW</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+  </div>
+
+
+</div>
+<br><br><br><br><br><br><br>
+
+
+
+<div class="boxx">
+  <img src="shadi.webp" class="boxx-img">
+
+</div>
+
+<div class="box-box">
+
+
+  <div class="demoo">
+    <img src="img1.webp">
+  </div>
+  <div class="demoo">
+    <img src="img2.webp">
+  </div>
+  <div class="demoo">
+    <img src="img3.webp">
+  </div>
+  <div class="demoo">
+    <img src="img4.webp">
+  </div>
+  <div class="demoo">
+    <img src="img5.webp">
+  </div>
+  <div class="demoo">
+    <img src="img6.webp">
+  </div>
+
+</div>
+
+<br>
+<div class="full">
+  <img src="raw.webp" class="full-img">
+</div>
+
+<div class="productss">
+  <!-- <div class="save">SAVE ₹400</div> -->
+
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+
+    <img src="raw1.webp" class="cloth-pet">
+    <div class="text">
+      RAW BITES<BR> BLUE FLAVOUR</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+
+    <img src="raw2.webp" class="cloth-pet">
+    <div class="text">
+      RAW BITES <BR> GREEN FLAVOUR</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+
+
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+    <img src="raw3.webp" class="cloth-pet">
+
+    <div class="text">
+      RAW BITES <BR> PURPLE FLAVOUR</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+
+
+  </div>
+  <div class="petbox">
+    <div class="save">SAVE ₹400</div>
+
+
+    <img src="raw4.webp" class="cloth-pet">
+    <div class="text">
+      RAW BITES <BR>MAGENTA FLAVOUR</div>
+    <div class="hoodie">
+      Little Paw DOg Hoodide-jo humse jale thoda side se chale<br>
+    </div>
+    <div class="review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>200
+      Reviews</div><br>
+    <div class="rs"><b>Rs.1099.00</b></div>
+    <div class="cart"> ADD TO CART</div><br>
+    <div class="code"> use code :LOVE52 for Flat 25rs off</div><br>
+
+  </div>
+
+</div>
+<br><br><br><br><br><br><br>
+
+<div class="boxx">
+  <img src="henloo.webp" class="boxx-img">
+
+</div>
+
+
+
+<!--  -->
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>EXPLORE</h3>
+      <ul>
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Personalized Items</li>
+        <li>Paws Blogs</li>
+        <li>Dog Health Insurance</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>NEED HELP?</h3>
+      <ul>
+        <li>Track your order</li>
+        <li>Privacy Policy</li>
+        <li>Return & Refunds</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>TRENDING LINKS</h3>
+      <ul>
+        <li>Dog Toys</li>
+        <li>Dog Treats & Chews</li>
+        <li>Tuxedo Bandana</li>
+        <li>Rainwear</li>
+        <li>Cat Toys</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>STAY CONNECTED</h3>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+      <input type="email" placeholder="Enter your email">
+      <button>Submit</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PawsIndia. All Rights Reserved.</p>
+    <div class="payment-icons">
+      <img src="visa.png" alt="Visa">
+      <img src="mastercard.png" alt="Mastercard">
+      <img src="american-express.png" alt="AmEx">
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  let demo = document.getElementById("b");
+  demo.addEventListener("click", function (x) {
+    demo.classList.toggle("bb");
+  })
+
+  let demo1 = document.getElementById("b1");
+  demo1.addEventListener("click", function (x) {
+    demo1.classList.toggle("bb");
+  })
+
+  let demo2 = document.getElementById("b2");
+  demo2.addEventListener("click", function (x) {
+    demo2.classList.toggle("bb");
+  })
+
+  let demo3 = document.getElementById("b3");
+  demo3.addEventListener("click", function (x) {
+    demo3.classList.toggle("bb");
+  })
+
+  let demo4 = document.getElementById("b4");
+  demo4.addEventListener("click", function (x) {
+    demo4.classList.toggle("bb");
+  })
+
+  let demo5 = document.getElementById("b5");
+  demo5.addEventListener("click", function (x) {
+    demo5.classList.toggle("bb");
+  })
+
+  let demo6 = document.getElementById("b6");
+  demo6.addEventListener("click", function (x) {
+    demo6.classList.toggle("bb");
+  })
+
+  let demo7 = document.getElementById("b7");
+  demo7.addEventListener("click", function (x) {
+    demo7.classList.toggle("bb");
+  })
+  AOS.init();
+
+</script>
+
+
+</body>
+
+</html>
