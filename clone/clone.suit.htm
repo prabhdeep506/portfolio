@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+
+
+
+body {
+            font-family: Arial, sans-serif;
+        }
+        .tag-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .tag {
+            background-color: black;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tag .close {
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        .clear-all {
+            color: blue;
+            cursor: pointer;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: #fff;
+            padding-bottom: 10px;
+        }
+
+        .box-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .box1 {
+            padding: 10px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-left: 5px;
+        }
+
+        .discount {
+            color: green;
+            margin-left: 5px;
+        }
+
+        .free-delivery {
+            display: inline-block;
+            background: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .rating span {
+            background: rgb(55, 54, 54);
+
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+
+        .rating span:hover {
+            background: rgb(0, 0, 0);
+
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+
+        .reviews {
+            color: #888;
+            font-size: 14px;
+        }
+
+
+        body {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .ul {
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+            background-color: black;
+            height: 40px;
+            margin: 5px;
+
+        }
+
+        .ul li {
+            color: white;
+            list-style: none;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+
+        }
+
+        .bg1 {
+            width: 20%;
+            height: 40px;
+            /* border: 2px red solid; */
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+        }
+
+        .bg2 {
+            width: 50%;
+            height: 40px;
+            background-color: rgb(194, 187, 177);
+            border-radius: 20px;
+            font-size: 18px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 50px;
+            color: grey;
+        }
+
+        .bg3 {
+            width: 30%;
+            height: 40px;
+            /* border: 2px red solid; */
+            font-size: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+        }
+
+        .bg3 li {
+            list-style: none;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 60px;
+        }
+
+        .nav li {
+            list-style: none;
+        }
+
+        .one {
+            font-size: 20px;
+            color: rgb(54, 54, 54);
+            font-weight: bold;
+        }
+
+        .two {
+            font-size: 20px;
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+
+        .three {
+            font-size: 20px;
+            color: rgb(5, 150, 63);
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+        .lastbox {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            background-color: rgb(254, 248, 251);
+        }
+
+        .b1 {
+            width: 25%;
+            height: 400px;
+        }
+
+        .b11 {
+            text-align: end;
+            justify-content: end;
+            align-items: center;
+            padding-top: 40px;
+            padding-right: 20px;
+        }
+
+        .b2 {
+            width: 15%;
+            height: auto;
+        }
+
+        .b22 {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 40px;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .b3 {
+            width: 15%;
+            height: 400px;
+        }
+
+        .b33 {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding-top: 40px;
+            align-items: center;
+            margin-right: 140px;
+        }
+
+        .abc {
+            font-weight: bold;
+        }
+
+        .find {
+            width: 100px;
+            height: 50px;
+            font-size: larger;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            width: 400px;
+            height: 30px;
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 30px;
+            margin-right: 150px;
+        }
+
+        .sign {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .search1 {
+            width: 90%;
+            height: 30px;
+            background-color: rgb(255, 252, 252);
+            justify-content: start;
+            align-items: center;
+            display: flex;
+            color: grey;
+            padding: auto;
+        }
+
+        .search {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 10%;
+            height: 30px;
+            border-style: groove;
+            display: flex;
+            margin: 10px;
+        }
+
+        .search2 {
+            width: 40%;
+            height: 32px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            padding-left: 5px 5px 5px 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .search11 {
+            width: 80%;
+            height: 30px;
+            background-color: rgb(255, 252, 252);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: grey;
+        }
+
+        .searchh {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+            border-style: groove;
+        }
+
+        .search22 {
+            width: 40%;
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            padding-left: 5px 5px 5px 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .us {
+            width: 20%;
+            height: 30px;
+            background-color: rgb(222, 214, 214);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .navitem11 {
+            width: 500px;
+            height: 40px;
+            color: rgb(120, 118, 118);
+            ;
+            margin-top: 20px;
+            font-size: smaller;
+        }
+
+        .acc {
+            width: 500px;
+            height: 50px;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .lastboxx {
+            width: 500px;
+            height: 60px;
+            background-color: rgb(254, 248, 251);
+        }
+
+        .sb1 {
+            width: 40px;
+            height: 30px
+        }
+
+        .lastboxxx {
+            width: 500px;
+            height: 50px;
+            background-color: rgb(254, 248, 251);
+        }
+
+        .sb11 {
+            width: 50px;
+            height: 40px;
+            margin: 20px;
+        }
+
+        .sbox {
+            width: 550px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 200px
+        }
+
+        .ssbox {
+            background-color: rgb(254, 248, 251);
+            color: grey;
+        }
+
+        .puma {
+            width: 100%;
+            height: 400px;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin: 20px;
+        }
+
+        .puma1 {
+            width: 90%;
+            height: 300px;
+            background-color: rgb(59, 82, 82);
+            display: flex;
+            justify-content: center;
+        }
+
+        .puma-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .eidd {
+            align-items: center;
+            font
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-nav">
+        <ul class="ul">
+            <li>First Citizen Club</li>
+            <li>Help & Support </li>
+            <li>App Download</li>
+        </ul>
+        <div class="navbar">
+            <div class="bg1">Shopping Booth</div>
+            <div class="bg2">
+                <i class="fa-regular fa-magnifying-glass"></i>
+                What Are You Looking For?
+            </div>
+            <div class="bg3">
+                <li> Fashion List</li>
+                <li> Login</li>
+                <li>Follow</li>
+            </div>
+        </div>
+        <div class="nav">
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>BEAUTY</li>
+            <li>WATCHES</li>
+            <li>GIFTS</li>
+            <li>BRANDS</li>
+            <li class="one">STYLE HUB</li>
+            <li class="two">BARG%INS</li>
+            <li class="three">LUXE</li>
+        </div>
+
+        <div class="tag-container" id="tagContainer">
+            <div class="tag">Kurtas <span class="close" onclick="removeTag(this)">&times;</span></div>
+            <div class="tag">Kurtis & tops <span class="close" onclick="removeTag(this)">&times;</span></div>
+            <div class="tag">Ethnicwear <span class="close" onclick="removeTag(this)">&times;</span></div>
+            <div class="tag">Indianwear <span class="close" onclick="removeTag(this)">&times;</span></div>
+            <span class="clear-all" onclick="clearAll()">Clear All</span>
+        </div>
+    
+
+
+        <!-- <p class="eidd">Eid Collection</p> -->
+
+        <div class="container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="men9.jpg" alt="Jivika Attractive Kurtis">
+                </div>
+                <div class="box1">
+                    <div class="product-title">Jivika Attractive Kurtis</div>
+                    <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span>
+                    </div>
+                    <div class="free-delivery">Free Delivery</div>
+                    <div class="rating">
+                        <span>3.9 ★</span>
+                        <div class="reviews">38187 Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="men10.jpg" alt="Elegant Anarkali Suit">
+                </div>
+                <div class="box1">
+                    <div class="product-title">Elegant Anarkali Suit</div>
+                    <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span>
+                    </div>
+                    <div class="free-delivery">Free Delivery</div>
+                    <div class="rating">
+                        <span>4.2 ★</span>
+                        <div class="reviews">25190 Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="men11.jpg" alt="Designer Kurti">
+                </div>
+                <div class="box1">
+                    <div class="product-title">Designer Kurti</div>
+                    <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span>
+                    </div>
+                    <div class="free-delivery">Free Delivery</div>
+                    <div class="rating">
+                        <span>4.5 ★</span>
+                        <div class="reviews">18200 Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="men12.jpg" alt="Lehenga Choli">
+                </div>
+                <div class="box1">
+                    <div class="product-title">Lehenga Choli</div>
+                    <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span>
+                    </div <div class="free-delivery">Free Delivery
+                </div>
+                <div class="rating">
+                    <span>4.7 ★</span>
+                    <div class="reviews">20500 Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-img">
+                <img src="ethnic1.jpg" alt="Jivika Attractive Kurtis">
+            </div>
+            <div class="box1">
+                <div class="product-title">Jivika Attractive Kurtis</div>
+                <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>3.9 ★</span>
+                    <div class="reviews">38187 Reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="ethnic2.jpg" alt="Elegant Anarkali Suit">
+            </div>
+            <div class="box1">
+                <div class="product-title">Elegant Anarkali Suit</div>
+                <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.2 ★</span>
+                    <div class="reviews">25190 Reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="ethnic3.jpg" alt="Designer Kurti">
+            </div>
+            <div class="box1">
+                <div class="product-title">Designer Kurti</div>
+                <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.5 ★</span>
+                    <div class="reviews">18200 Reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="ethnic4.jpg" alt="Lehenga Choli">
+            </div>
+            <div class="box1">
+                <div class="product-title">Lehenga Choli</div>
+                <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.7 ★</span>
+                    <div class="reviews">20500 Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-img">
+                <img src="men1.jpg" alt="Jivika Attractive Kurtis">
+            </div>
+            <div class="box1">
+                <div class="product-title">Jivika Attractive Kurtis</div>
+                <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>3.9 ★</span>
+                    <div class="reviews">38187 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men2.jpg" alt="Elegant Anarkali Suit">
+            </div>
+            <div class="box1">
+                <div class="product-title">Elegant Anarkali Suit</div>
+                <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.2 ★</span>
+                    <div class="reviews">25190 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men3.jpg" alt="Designer Kurti">
+            </div>
+            <div class="box1">
+                <div class="product-title">Designer Kurti</div>
+                <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.5 ★</span>
+                    <div class="reviews">18200 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men4.jpg" alt="Lehenga Choli">
+            </div>
+            <div class="box1">
+                <div class="product-title">Lehenga Choli</div>
+                <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span></div
+                    <div class="free-delivery">Free Delivery
+            </div>
+            <div class="rating">
+                <span>4.7 ★</span>
+                <div class="reviews">20500 Reviews</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-img">
+                <img src="ethnic5.jpg" alt="Jivika Attractive Kurtis">
+            </div>
+            <div class="box1">
+                <div class="product-title">Jivika Attractive Kurtis</div>
+                <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>3.9 ★</span>
+                    <div class="reviews">38187 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e6.jpg" alt="Elegant Anarkali Suit">
+            </div>
+            <div class="box1">
+                <div class="product-title">Elegant Anarkali Suit</div>
+                <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.2 ★</span>
+                    <div class="reviews">25190 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e7.jpg" alt="Designer Kurti">
+            </div>
+            <div class="box1">
+                <div class="product-title">Designer Kurti</div>
+                <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.5 ★</span>
+                    <div class="reviews">18200 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e8.jpg" alt="Lehenga Choli">
+            </div>
+            <div class="box1">
+                <div class="product-title">Lehenga Choli</div>
+                <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span></div
+                    <div class="free-delivery">Free Delivery
+            </div>
+            <div class="rating">
+                <span>4.7 ★</span>
+                <div class="reviews">20500 Reviews</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-img">
+                <img src="men5.jpg" alt="Jivika Attractive Kurtis">
+            </div>
+            <div class="box1">
+                <div class="product-title">Jivika Attractive Kurtis</div>
+                <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>3.9 ★</span>
+                    <div class="reviews">38187 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men6.jpg" alt="Elegant Anarkali Suit">
+            </div>
+            <div class="box1">
+                <div class="product-title">Elegant Anarkali Suit</div>
+                <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.2 ★</span>
+                    <div class="reviews">25190 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men7.jpg" alt="Designer Kurti">
+            </div>
+            <div class="box1">
+                <div class="product-title">Designer Kurti</div>
+                <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.5 ★</span>
+                    <div class="reviews">18200 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="men8.jpg" alt="Lehenga Choli">
+            </div>
+            <div class="box1">
+                <div class="product-title">Lehenga Choli</div>
+                <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span></div
+                    <div class="free-delivery">Free Delivery
+            </div>
+            <div class="rating">
+                <span>4.7 ★</span>
+                <div class="reviews">20500 Reviews</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-img">
+                <img src="e9.jpg" alt="Jivika Attractive Kurtis">
+            </div>
+            <div class="box1">
+                <div class="product-title">Jivika Attractive Kurtis</div>
+                <div class="price">₹535 <span class="old-price">₹550</span> <span class="discount">3% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>3.9 ★</span>
+                    <div class="reviews">38187 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e10.jpg" alt="Elegant Anarkali Suit">
+            </div>
+            <div class="box1">
+                <div class="product-title">Elegant Anarkali Suit</div>
+                <div class="price">₹650 <span class="old-price">₹700</span> <span class="discount">7% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.2 ★</span>
+                    <div class="reviews">25190 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e11.jpg" alt="Designer Kurti">
+            </div>
+            <div class="box1">
+                <div class="product-title">Designer Kurti</div>
+                <div class="price">₹750 <span class="old-price">₹800</span> <span class="discount">6% off</span></div>
+                <div class="free-delivery">Free Delivery</div>
+                <div class="rating">
+                    <span>4.5 ★</span>
+                    <div class="reviews">18200 Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="e12.jpg" alt="Lehenga Choli">
+            </div>
+            <div class="box1">
+                <div class="product-title">Lehenga Choli</div>
+                <div class="price">₹1200 <span class="old-price">₹1300</span> <span class="discount">8% off</span></div
+                    <div class="free-delivery">Free Delivery
+            </div>
+            <div class="rating">
+                <span>4.7 ★</span>
+                <div class="reviews">20500 Reviews</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="lastbox">
+        <div class="b1">
+            <div class="b11"><span class="abc">Company Info</span><br><br>
+                About Shein<br>
+                Sustainability<br>
+                Fashion Blogger<br>
+                Supply Chain<br>
+                Careers<br>Student Discount<br>
+                <br>#Hein101
+            </div>
+        </div>
+        <div class="b2">
+            <div class="b22"><span class="abc">Help and Support</span><br>
+                Shipping Info<br>
+                Returns
+                <br>
+                Refund
+                <br>
+                How To Order
+                <br>
+                How To Track
+                <br>
+                Size Guide
+                <br>
+                SHEIN VIP
+                <br>
+                Sell on Shein
+            </div>
+        </div>
+        <div class="b3">
+            <div class="b33"><span class="abc">Customer Care</span><br>
+                Contact us<br>
+                Payment & Tax<br>
+                Bonus Point<br> </div>
+        </div>
+        <div class="iconn">
+            <span class="find">Find us On</span>
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <span class="sign">Sign up for hein Style</span>
+            <br>
+            <br>
+            <div class="search">
+                <div class="search1">Your Email Address</div>
+                <div class="search2">Subscribe</div>
+            </div>
+            <br>
+
+            <div class="searchh">
+                <div class="us">US+1</div>
+                <div class="search11">Whatsapp Account</div>
+                <div class="search22">Subscribe</div>
+            </div>
+
+            <div class="navitem11">By clicking the SUBSCRIBE button, you are agreeing to our Privacy & Cookie Policy If
+                you want to unsubsribe the marketing email, please proceed to our privacy center.</div>
+
+            <span class="acc">We Accept</span>
+
+
+            <div class="lastboxx">
+
+                <img src="visa.jpg" class="sb1">
+                <img src="zippay.png" class="sb1">
+                <img src="maestro.png" class="sb1">
+                <img src="ae.png" class="sb1">
+                <img src="applepay.png" class="sb1">
+                <img src="diner.jpg" class="sb1">
+                <img src="paypal.png" class="sb1">
+                <img src="afterpay.png" class="sb1">
+                <img src="klarna.png" class="sb1">
+                <img src="discover.png" class="sb1">
+                <img src="gpay.png" class="sb1">
+                <img src="mastercard.png" class="sb1">
+                <img src="venmo.png" class="sb1">
+                <img src="affirm.png" class="sb1">
+            </div>
+            <div class="lastboxxx">
+                <img src="tw.png" class="sb11">
+                <img src="dmca.png" class="sb11">
+            </div>
+
+        </div>
+    </div>
+    <div class="ssbox">
+        <div class="sbox">
+            <span>©2009-2024 SHEIN All Rights Reserved/<br><br>
+                Privacy Center /Privacy & Cookie Policy/Do Not Sell My Personal Information<br>/Terms & Conditions/IP
+                NoticeAccessibility/Imprint/Ad Choice< </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script>
+       function removeTag(element) {
+            element.parentElement.remove();
+        }
+        function clearAll() {
+            document.getElementById('tagContainer').innerHTML = '';
+        }
+</script>
+
+</body>
+
+</html>
