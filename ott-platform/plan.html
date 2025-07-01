@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streaming UI Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('plan1.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .signin {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      /* background: #ffffff; */
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 20px;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+.plan-button {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background-color: #e4c056;
+}
+
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="overlay"></div>
+    <div class="logo">peacock<span style="color: yellow">&#9679;</span></div>
+    <!-- <button class="signin">Sign In</button> -->
+        <a href="signin.html" class="signin">sign in</a>
+    <div class="content">
+      <h1>Your Go-To for Hit Movies, TV, Live Sports & More</h1>
+      <p>Plans start at $4.99/month. Cancel anytime.</p>
+      <a href="pick.html" class="plan-button">Pick a Plan</a>
+
+    </div>
+  </div>
+</body>
+</html>

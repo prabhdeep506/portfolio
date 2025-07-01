@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peacock - Pick a Plan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .bodyyy {
+      background-color: #000;
+      color: #fff;
+      width: 100%;
+      height: 660px;
+    }
+
+    .headerr {
+      background-color: #141414;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logodemo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logodemosspan {
+      color: #ffc107;
+    }
+
+    .signin-btn {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .maindemo {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .mainh1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .mainp {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 100px;
+    }
+
+    .plan {
+      background-color: #1f1f1f;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      height: 400px;
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+      font-weight: 300;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      border-color: #ffc107;
+    }
+
+    .planh2 {
+      color: #ffc107;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .para {
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+    }
+
+    .select-btnn {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: #ffc107;
+      color: #000;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 180px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  color: #fffb00;
+  cursor: pointer;
+  z-index: 100;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+    @media (max-width: 768px) {
+      .main h1 {
+        font-size: 2rem;
+      }
+
+      .main p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+     <button class="close-btn" aria-label="Close" id="closebtn">
+  <span class="logodemospan">&times;</span>
+</button>
+  <div class="headerr">
+    <div class="logodemo">peacock<span>&#9679;</span></div>
+    <button class="signin-btn">Sign In</button>
+  </div>
+<div class="bodyyy">
+  <div class="maindemo">
+    <h1 class="mainh1">Pick the Plan That’s Right for You</h1>
+    <p class="mainp">Plans start at $4.99/month. Cancel anytime. No commitments.</p>
+    <!-- <br><br><br><br> -->
+    <div class="plans">
+      <div class="plan">
+        <h2 class="planh2">Peacock Free</h2>
+        <p class="para">$0/month</p>
+        <p class="para">Thousands of hours of movies & shows</p>
+        <p class="para">Limited ads</p>
+        <p class="para">Live news & sports</p>
+        <button class="select-btn">Select</button>
+      </div>
+      <div class="plan">
+        <h2 class="planh2">Peacock Premium</h2>
+        <p class="para">$4.99/month</p>
+        <p class="para">Everything in Free</p>
+        <p class="para">More live sports & events</p>
+        <p class="para">Next-day access to NBC shows</p>
+        <button class="select-btn">Select</button>
+      </div>
+      <div class="plan">
+        <h2 class="planh2">Peacock Premium Plus</h2>
+        <p class="para">$9.99/month</p>
+        <p class="para">No ads (with limited exceptions)</p>
+        <p class="para">Download & watch offline</p>
+        <p class="para">Everything in Premium</p>
+        <button class="select-btnn">Select</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+    let btn=document.getElementById("closebtn");
+    btn.addEventListener("click",function(){
+        window.close();
+    })
+  </script>
+</body>
+</html>
