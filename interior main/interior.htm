@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>interiordesign website</title>
+
+  <link rel="stylesheet" href="interior.css">
+  <script src="interior.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+</head>
+
+<body>
+
+  <header id="navbar">
+
+
+    <div class="containerr">
+      <div class="logo">
+        <!-- <img src="logo.png" alt=" Logo" class="logo-img"> -->
+         <i class="fa-solid fa-house"></i>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#Blog">Blog Home</a></li>
+          <li><a href="#">Interior</a></li>
+          <li><a href="#workbox">How it Works</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Find Your Style</a></li>
+          <!-- <li><a href="#">CSR</a></li>
+          <li><a href="#">Others</a></li> -->
+        </ul>
+      </nav>
+      <div class="nav-contact">
+        <span class="icon">&#9742;</span>
+        <a href="tel:+919732300007">+91-7678575254</a>
+      </div>
+    </div>
+
+    <!-- <div class="main">
+        <img src="img/main.1.webp" class="main-img">
+    </div> -->
+
+
+
+  </header>
+  <!-- !-- <section style="height:2000px; padding-top:120px;"> 
+      <!-- <h1>Scroll to see Navbar effect</h1> -->
+  <!-- </section> -->
+
+
+  <main>
+
+    <div class="main" id="Blog">
+      <img src="main.1.webp" class="main-img">
+
+    </div>
+    <p class="main-text">Get a Designer<br>
+      Space You'll Definately Love</p>
+    <p class="text-1">HOW IT WORKS: OUR EASY PROCESS</p>
+
+    <!-- <div data-aos="zoom-in"> -->
+    <div class="box-1   ">
+      <div class="box-1-box  ">
+
+        <video src="video.mp4" autoplay controls muted class="video"></video>
+      </div>
+
+      <div class="box-2-box  ">
+        <p class="text-client">Client's Challenge<br></p>
+        <p class="text-look"> We aspire to create a serene, minimalist living space that harmoniously blends
+          with our lush green surroundings. By embracing Feng Shui principles, we aim to foster a balanced
+          and
+          tranquil environment where energy flows freely. Natural materials like wood and stone, along
+          with a
+          neutral color palette inspired by nature, will form the foundation of our design, promoting a
+          sense
+          of calm and connection to the outdoors. </p>
+        <p class="text-result">Result</p>
+        <p class="text-dream">"We got the relaxing dream home we always wanted. Wanda was fun to work with
+          and
+          paid attention to every single detail. Her keen eye for design and thoughtful suggestions
+          transformed our space into a harmonious blend of comfort and style."</p>
+
+
+      </div>
+    </div>
+    </div>
+    <br><br>
+    <!-- <br><br><br><br><br><br> -->
+    <p class="text-2">Here is Our Designs</p>
+
+    <div class="tabs">
+      <div class="tab active" onclick="showGallery('living')">LIVING ROOM</div>
+      <div class="tab" onclick="showGallery('dining')">DINING ROOM</div>
+      <div class="tab" onclick="showGallery('office')">OFFICE</div>
+      <div class="tab" onclick="showGallery('kitchen')">KITCHEN</div>
+      <div class="tab" onclick="showGallery('bed')">BEDROOM</div>
+
+      <div class="tab" onclick="showGallery('hallway')">HALLWAYS</div>
+      <div class="tab" onclick="showGallery('kids')">KIDS</div>
+      <div class="tab" onclick="showGallery('outdoor')">OUTDOOR</div>
+    </div>
+
+    <!-- Galleries -->
+    <div id="living" class="gallery-container active">
+      <button class="arrow left" onclick="moveSlide('living', -1)">‹</button>
+      <div class="slider" id="slider-living">
+        <img src="li1.webp" alt="">
+        <img src="li2.webp" alt="">
+        <img src="li3.webp" alt="">
+        <img src="li4.webp" alt="">
+        <img src="li5.webp" alt="">
+        <img src="li6.webp" alt="">
+        <img src="li7.webp" alt="">
+        <img src="li8.webp" alt="">
+        <img src="li9.webp" alt="">
+        <img src="li10.webp" alt="">
+
+
+      </div>
+      <button class="arrow right" onclick="moveSlide('living', 1)">›</button>
+    </div>
+
+    <div id="dining" class="gallery-container">
+      <button class="arrow left" onclick="moveSlide('dining', -1)">‹</button>
+      <div class="slider" id="slider-dining">
+        <img src="d1.webp" alt="">
+        <img src="d2.webp" alt="">
+        <img src="d3.webp" alt="">
+        <img src="d4.webp" alt="">
+        <img src="d5.webp" alt="">
+        <img src="d6.webp" alt="">
+        <img src="d7.webp" alt="">
+        <img src="d8.webp" alt="">
+        <img src="d9.webp" alt="">
+        <img src="d10.webp" alt="">
+      </div>
+      <button class="arrow right" onclick="moveSlide('dining', 1)">›</button>
+    </div>
+
+    <div id="office" class="gallery-container">
+      <button class="arrow left" onclick="moveSlide('office', -1)">‹</button>
+      <div class="slider" id="slider-office">
+        <img src="o1.webp" alt="">
+        <img src="o2.webp" alt="">
+        <img src="o3.webp" alt="">
+        <img src="o4.webp" alt="">
+        <img src="o5.webp" alt="">
+        <img src="o6.webp" alt="">
+        <img src="o7.webp" alt="">
+        <img src="o8.webp" alt="">
+        <img src="o9.webp" alt="">
+        <img src="o10.webp" alt="">
+      </div>
+      <button class="arrow right" onclick="moveSlide('office', 1)">›</button>
+    </div>
+
+    <div id="kitchen" class="gallery-container">
+      <button class="arrow left" onclick="moveSlide('kitchen', -1)">‹</button>
+      <div class="slider" id="slider-kitchen">
+        <img src="k1.webp" alt="">
+        <img src="k2.webp" alt="">
+        <img src="k3.webp" alt="">
+        <img src="k4.webp" alt="">
+        <img src="k5.webp" alt="">
+        <img src="k6.webp" alt="">
+        <img src="k7.webp" alt="">
+        <img src="k8.webp" alt="">
+        <img src="k9.webp" alt="">
+        <img src="k10.webp" alt="">
+      </div>
+      <button class="arrow right" onclick="moveSlide('kitchen', 1)">›</button>
+    </div>
+
+
+    <div id="bed" class="gallery-container ">
+      <button class="arrow left" onclick="moveSlide('bed', -1)">‹</button>
+      <div class="slider" id="slider-bed">
+        <img src="b1.webp" alt="">
+        <img src="b2.webp" alt="">
+        <img src="b3.webp" alt="">
+        <img src="b4.webp" alt="">
+        <img src="b5.webp" alt="">
+        <img src="b6.webp" alt="">
+        <img src="b7.webp" alt="">
+        <img src="b8.webp" alt="">
+        <img src="b9.webp" alt="">
+        <img src="b10.webp" alt="">
+
+
+      </div>
+      <button class="arrow right" onclick="moveSlide('bed', 1)">›</button>
+    </div>
+
+
+
+
+
+    <div id="hallway" class="gallery-container ">
+      <button class="arrow left" onclick="moveSlide('hallway', -1)">‹</button>
+      <div class="slider" id="slider-hallway">
+        <img src="h1.webp" alt="">
+        <img src="h2.webp" alt="">
+        <img src="h3.webp" alt="">
+        <img src="h4.webp" alt="">
+        <img src="h5.webp" alt="">
+        <img src="h6.webp" alt="">
+        <img src="h7.webp" alt="">
+        <img src="h8.webp" alt="">
+        <img src="h9.webp" alt="">
+        <img src="h10.webp" alt="">
+
+
+      </div>
+      <button class="arrow right" onclick="moveSlide('hallway', 1)">›</button>
+    </div>
+
+
+
+
+    <div id="kids" class="gallery-container ">
+      <button class="arrow left" onclick="moveSlide('kids', -1)">‹</button>
+      <div class="slider" id="slider-kids">
+        <img src="c1.webp" alt="">
+        <img src="c2.webp" alt="">
+        <img src="c3.webp" alt="">
+        <img src="c4.webp" alt="">
+        <img src="c5.webp" alt="">
+        <img src="c6.webp" alt="">
+        <img src="c7.webp" alt="">
+        <img src="c8.webp" alt="">
+        <img src="c9.webp" alt="">
+        <img src="c10.webp" alt="">
+
+
+      </div>
+      <button class="arrow right" onclick="moveSlide('kids', 1)">›</button>
+    </div>
+
+
+
+
+
+    <div id="outdoor" class="gallery-container ">
+      <button class="arrow left" onclick="moveSlide('outddoor', -1)">‹</button>
+      <div class="slider" id="slider-outdoor">
+        <img src="out1.webp" alt="">
+        <img src="out2.webp" alt="">
+        <img src="out3.webp" alt="">
+        <img src="out4.webp" alt="">
+        <img src="out5.webp" alt="">
+        <img src="out6.webp" alt="">
+        <img src="out7.webp" alt="">
+        <img src="out8.webp" alt="">
+        <img src="out9.webp" alt="">
+        <img src="out10.webp" alt="">
+
+
+      </div>
+      <button class="arrow right" onclick="moveSlide('outdoor', 1)">›</button>
+    </div>
+    <p class="text-3"> Here's Reviews...!</p>
+
+    <div class="box3">
+      <img src="colorful.webp" class="color-img">
+
+      <div class="box3-1">
+        <p class="tag-1 ">“From the moment we signed up, until we completed the entire house, we felt pampered, loved,
+          and appreciated.
+          The quality of the online decorators and people who work there is top-notch, highly skilled, caring and very
+          professional.”</p>
+        <div class="review-box">
+
+          <img src="review.jpeg" class="review-img">
+          <p class="img-text">Debra Albert<br>
+            Long Island, NY</p>
+
+        </div>
+
+      </div>
+      <div class="box3-2">
+        <p class="tag-1 ">“Let me start by saying, I love, love, love, Decorilla. Thanks so much for capturing my
+          vision
+          and bringing
+          my ordinary space to a level of brilliance! Every detail looks absolutely amazing.”</p>
+
+        <div class="review-box">
+
+          <img src="review.jpeg2.jpeg" class="review-img">
+          <p class="img-text">Evelyn Hanson<br>
+            Houston, TX</p>
+
+        </div>
+      </div>
+
+      <div class="box3-3">
+
+        <p class="tag-1">“I’m so impressed with the customer service from Decorilla. After all the stress from moving,
+          it’s nice for
+          something to be so easy. The ordering team helped coordinate deliveries and the discounts paid for the
+          service
+          many times over.”</p>
+
+        <div class="review-box">
+
+          <img src="review3.png" class="review-img">
+          <p class="img-text">David Linacre<br>
+            Tampa, FL</p>
+
+        </div>
+      </div>
+
+      <div class="box3-4">
+        <p class="tag-1">“I can’t believe how great my 3D renderings looked! Susan completely understood what I wanted
+          and got every
+          little detail of my online interior design just perfect.”</p>
+
+        <div class="review-box">
+
+          <img src="review4.png" class="review-img">
+          <p class="img-text">Sara Patterson<br>
+            Los Angeles, CA</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <!-- Duplicate content for loop effect -->
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4727/4727491.png" alt="Warranty" />
+          <p>Flat 10-year warranty</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/3523/3523063.png" alt="EMI" />
+          <p>Easy EMIs</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4052/4052984.png" alt="Move In" />
+          <p>45-day move-in guarantee</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4213/4213179.png" alt="Quality" />
+          <p>146 quality checks</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="Happy Homes" />
+          <p>1,00,000+ happy homes</p>
+        </div>
+
+        <!-- Repeat again for infinite scroll -->
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4727/4727491.png" alt="Warranty" />
+          <p class="small-text">Flat 10-year warranty</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/3523/3523063.png" alt="EMI" />
+          <p class="small-text">Easy EMIs</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4052/4052984.png" alt="Move In" class="icon" />
+          <p class="small-text">45-day move-in guarantee</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/4213/4213179.png" alt="Quality" />
+          <p class="small-text">146 quality checks</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="Happy Homes" />
+          <p class="small-text">1,00,000+ happy homes</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <p class="text-4" id="workbox">Online Interior Design Services For Any Space.</p>
+    <div class="box3">
+
+      <div class="box4">
+
+        <div class="box-4-1 imghoverr">
+          <!-- <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"> -->
+
+            <img src="clone.webp" class="box-img">
+          </div>
+        </div>
+        <div class="box-4-2">
+          <div class="small">
+            <div class="one">1</div>
+          </div>
+          <p class="small-text1">Tell us your needs</p>
+          <p class="small-text2">To start your design project you'll complete a quick and easy questionnaire, let us
+            know your preferences,
+            attach photos of your room, and choose the inspiration you love.</p>
+        </div>
+
+      </div>
+    </div>
+    <br>
+
+
+    <div class="box33">
+      <div class="box44">
+
+        <div class="box-4-22">
+          <div class="upper">
+            <div class="smalll">
+              <div class="onee">2</div>
+              <div class="small-text11">Work closely with your chosen designer</div>
+            </div>
+          </div>
+
+          <div class="small-text22">Get multiple design concepts based on your assessment and budget. Choose your
+            favorite professional designer to help translate your vision.
+
+          </div>
+        </div>
+        <div class="box-4-11">
+          <!-- <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> -->
+
+            <img src="clone2.webp" class="box-img">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="box3">
+      <div class="box4">
+        <div class="box-4-1 imghoverr">
+
+          <!-- <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"> -->
+            <img src="clone3.webp" class="box-img">
+          </div>
+        </div>
+        <div class="box-4-2">
+          <div class="small">
+            <div class="one">3</div>
+          </div>
+          <p class="small-text111">Work closely with your chosen designer</p>
+          <p class="small-text222">Your designer will work with you to bring your design to life. They'll use the
+            perfect
+            combination of new and existing pieces, review and refine your custom-made 3D model, floor plan, color
+            palette and shopping list with you.</p>
+        </div>
+
+      </div>
+    </div>
+    <br><br>
+    <div class="container">
+      <h2 class="hello">You'll Receive</h2>
+      <div class="items">
+
+        <div class="item imghover">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="img1.webp">
+          </div>
+          <p class="para">Concepts From Multiple Designers</p>
+        </div>
+        <div class="item imghover">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="img2.webp" />
+          </div>
+          <p class="para">Constant Communication With Your Chosen Designer</p>
+        </div>
+
+        <div class="item imghover">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="img4.webp">
+          </div>
+          <p class="para">Floor Plan And Color Palette</p>
+        </div>
+        <div class="item imghover">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="img5.webp">
+          </div>
+          <p class="para">Shopping List And White Glove Concierge Service</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box3">
+      <div class="box4">
+        <div class="box-4-1 imghoverr">
+          <img src="clone4.webp" class="box-img">
+        </div>
+        <div class="box-4-2">
+          <div class="small">
+            <div class="one">4</div>
+          </div>
+          <p class="small-text1">Order and track your items</p>
+          <p class="small-text2">You'll have the flexibility to buy the items on your own timeline as needed. Our
+            white-glove shopping concierge service never expires and ensures that you'll get the best price possible
+            with our exclusive discounts saving you $1000s.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="box33">
+      <div class="box44">
+
+        <div class="box-4-22">
+          <div class="upper">
+            <div class="smallll">
+              <div class="onee">5</div>
+              <div class="small-text11">Work closely with your chosen designer</div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="box-4-11">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
+          <img src="clone2.webp" class="box-img">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="cta-section">
+      <h2>Ready to make your dream space a reality?</h2>
+      <button>LET'S GET STARTED</button>
+    </div>
+
+
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">How long does it take?</div>
+        <div class="accordion-content">We work on your schedule! Typically you’ll receive 2 initial design concepts
+          within
+          a week and then once you choose your favorite designer they will provide revisions based on your feedback
+          and
+          help you source the items (this usually takes one to three weeks). Our process can be expedited or extended
+          based on your needs.</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Do you offer in-home services?</div>
+        <div class="accordion-content">Yes! In most major U.S. cities we offer in-person assistance from home visits
+          to
+          shopping trips. You can start with a one hour initial consultation. Sign-up here to book your in-home
+          consultation today!</div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Do i have to buy the items right away</div>
+        <div class="accordion-content">We can help with shopping or you can buy the items at your own pace. We can
+          also
+          incorporate your existing items and provide access our trade discounts for up to one year after the end of
+          your
+          project.</div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">What happens once i select the winning design?</div>
+        <div class="accordion-content">Once you choose your designer you’ll be in constant communication them and you
+          may
+          even tell them if you really liked something from another proposal. Your chosen designer will refine the
+          design
+          based on your feedback when completing the realistic 3D model & shopping list that’s included in your
+          package.
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <div class="accordion-header">How do i receive your exclusive furniture discounts?</div>
+        <div class="accordion-content">Once you’ve purchased your design package, you’re in! You get immediate access
+          to
+          Decorilla discounts for your space. Just click on the brands tab for instructions. Our exclusive discounts
+          help us
+          make the most of every budget and allow our designers to create spaces that look better for less.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">How much does it cost to run a project?</div>
+        <div class="accordion-content">You set the budget! Pricing starts at $299 and you can customize your project
+          prize
+          amount to make sure you get a package that’s right for you.</div>
+      </div>
+
+
+      <div class="accordion-item">
+        <div class="accordion-header">Do i have to buy the items right away</div>
+        <div class="accordion-content">We can help with shopping or you can buy the items at your own pace. We can
+          also
+          incorporate your existing items and provide access our trade discounts for up to one year after the end of
+          your
+          project.</div>
+      </div>
+
+
+      <div class="accordion-item">
+        <div class="accordion-header">Are top interior designers available on Decorilla?</div>
+        <div class="accordion-content">Yes. Our interior designers are hand-picked and fully vetted and come from some
+          of
+          the best schools and firms around the nation. Our team collectively covers every style, budget range and
+          project
+          size. All of our designers have an interior design bachelors, masters, or professional decorator’s diploma.
+          They’ve worked at Fortune 500 companies, large design firms, and even for start-ups.</div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">What is your 100% satisfaction guarantee?</div>
+        <div class="accordion-content">We have a 100% satisfaction guarantee so if you don't like the concepts you
+          receive
+          just let us know within 60 days and we'll assign another designer to your project or provide more options to
+          make
+          sure you love your design!</div>
+      </div>
+    </div>
+    </div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>We create beautiful, functional interior spaces tailored to your lifestyle. Let us transform your space with style and purpose.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Email: info@yourinterior.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+      <p>Location: 123 Design St, NYC</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Interior Design Co. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+  </main>
+
+</body>
+
+</html>
+<script>
+     $(document).ready(function () {
+    $('.accordion-header').click(function () {
+      $('.accordion-content').slideUp(); // close all
+      if (!$(this).next().is(':visible')) {
+        $(this).next().slideDown(); // open clicked
+      }
+    });
+  });
+
+  AOS.init();
+
+
+</script>
