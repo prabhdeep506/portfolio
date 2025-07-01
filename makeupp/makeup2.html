@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ever Forever - Trending</title>
+    <style>
+      .lil {
+        width: 100%;
+        height: 9%;
+        ;
+        background-color: rgb(255, 255, 255);
+      }
+
+      header {
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        /* background: rgba(0, 0, 0, 0.8); */
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 30px 30px;
+        z-index: 200;
+      }
+
+
+      .div {
+        height: 100vh;
+        z-index: -5;
+        position: fixed;
+        width: 100vw;
+      }
+
+      .logoimg {
+        width: 100px;
+        height: 50px;
+      }
+
+      .logo {
+        width: 20%;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 200px;
+        text-shadow: 2px 2px black;
+      }
+
+      .brand {
+        font-size: 32px;
+        font-weight: bold;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .nav ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      nav ul li {
+        padding: 0 15px;
+      }
+
+
+      .last {
+        width: 100%;
+        height: 400px;
+        background-color: rgba(240, 236, 230, 255);
+        margin-top: 10px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .end {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        /* background-color: ; */
+      }
+
+      .popular {
+        width: 80%;
+        height: auto;
+        /* justify-content: center; */
+        text-align: start;
+        margin: 20px;
+        color: rgba(140, 141, 148, 255);
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-size: 25px;
+
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+        color: rgb(74, 71, 71);
+        transition: 0.5s;
+
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <div class="div">
+    <video src="sugar.mp4" class="video" autoplay loop muted></video>
+  </div>
+  <header>
+    <div class="logo">
+      <img src="ef1.jpg" class="logoimg">
+      <div class="brand">Ever Forever</div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li class="li"> <a href="makeup.htm" class="active">HOME</a></li>
+        <li class="li"> <a href="#">Beauty </a>
+          <!-- <li class="li"> <a href="#">Women</a> -->
+        <li class="li"> <a href="#">about us</a></li>
+        <li class="li"> <a href="#">Register/Login</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div class="lil">
+
+    <body class="bg-white font-sans text-gray-900">
+
+      <!-- Trending Header -->
+      <div class="text-center my-10">
+        <h2 class="text-sm uppercase tracking-widest">Trending at Ever Forever</h2>
+        <div class="flex justify-center space-x-10 mt-4">
+          <h3 class="text-3xl font-semibold border-b-2 border-black">New Launches</h3>
+          <h3 class="text-3xl font-semibold text-gray-400 hover:text-black cursor-pointer">Bestsellers</h3>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-20">
+
+        <!-- Product 1 -->
+        <div class="text-center">
+          <img src="img1.webp" alt="Dewy Foundation" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Ace Of Face Dewy Foundation</h4>
+          <p class="text-gray-700 mt-1">Rs. 799.00</p>
+          <!-- Shades -->
+          <div class="flex justify-center mt-2 space-x-1">
+            <span class="w-5 h-5 rounded-full border-2 border-black bg-[#F5E0D3]"></span>
+            <span class="w-5 h-5 rounded-full bg-[#E1B8A2]"></span>
+            <span class="w-5 h-5 rounded-full bg-[#D9A67A]"></span>
+            <!-- Add more shades -->
+          </div>
+          <!-- Ratings -->
+          <div class="mt-2 text-yellow-500">★★★★☆ (195)</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="text-center">
+          <img src="img2.webp" alt="Niacinamide Sunscreen" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Tan Ban 4% Niacinamide Sunscreen</h4>
+          <p class="text-gray-700 mt-1">Rs. 449.00</p>
+          <div class="mt-2 text-yellow-500">★★★★★ (2)</div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="text-center">
+          <img src="img3.webp" alt="Lip Gloss" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Partner In Shine Lip Gloss</h4>
+          <p class="text-gray-700 mt-1">Rs. 699.00</p>
+          <div class="flex justify-center mt-2 space-x-1">
+            <span class="w-5 h-5 rounded-full border-2 border-black bg-[#9B404A]"></span>
+            <span class="w-5 h-5 rounded-full bg-[#E83C50]"></span>
+            <span class="w-5 h-5 rounded-full bg-[#7D2731]"></span>
+          </div>
+          <div class="mt-2 text-yellow-500">★★★★☆ (91)</div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="text-center">
+          <img src="img4.webp" alt="Kojic Sunscreen" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Tan Ban 1% Kojic Acid Sunscreen</h4>
+          <p class="text-gray-700 mt-1">Rs. 399.00</p>
+          <div class="mt-2 text-yellow-500">★★★★☆ (1)</div>
+        </div>
+
+      </div>
+
+      <section class="bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20">
+        <div class="text-center mb-8">
+          <button class="bg-black text-white px-6 py-2 uppercase tracking-widest hover:bg-gray-800">View All</button>
+          <h2 class="mt-6 text-2xl md:text-3xl font-medium tracking-widest">Deal For You</h2>
+        </div>
+
+        <div class="w-full  mx-auto">
+          <div class="relative rounded-lg overflow-hidden shadow-md">
+            <!-- Banner image -->
+            <img src="img5.webp" alt="Deal Banner" class="w-full h-auto object-cover">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20">
+        <div class="text-center mb-8">
+          <!-- <button class="bg-black text-white px-6 py-2 uppercase tracking-widest hover:bg-gray-800">View All</button> -->
+          <h2 class="mt-6 text-2xl md:text-3xl font-medium tracking-widest">Summer Essentials</h2>
+        </div>
+
+        <div class="w-full  mx-auto">
+          <div class="relative rounded-lg overflow-hidden shadow-md">
+            <!-- Banner image -->
+            <img src="img6.webp" alt="Deal Banner" class="w-full h-auto object-cover">
+          </div>
+        </div>
+      </section>
+      <div class="text-center mb-8">
+
+        <h2 class="mt-6 text-2xl md:text-3xl font-medium tracking-widest">Elite Edition
+          On-The-Go Essentials
+
+        </h2>
+      </div>
+
+
+      <div class="text-center my-10">
+
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-20">
+
+        <!-- Product 1 -->
+        <div class="text-center">
+          <img src="img7.webp" alt="Dewy Foundation" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Vineeta's Favourite Makeup Kit
+
+          </h4>
+          <p class="text-gray-700 mt-1"> Sale priceRs. 2,999.00
+            Regular priceRs. 3,894.00</p>
+          <!-- Shades -->
+          <div class="flex justify-center mt-2 space-x-1">
+            <span class="w-5 h-5 rounded-full border-2 border-black bg-[#F5E0D3]"></span>
+            <!-- <span class="w-5 h-5 rounded-full bg-[#E1B8A2]"></span> -->
+            <!-- <span class="w-5 h-5 rounded-full bg-[#D9A67A]"></span> -->
+            <!-- Add more shades -->
+          </div>
+          <!-- Ratings -->
+          <div class="mt-2 text-yellow-500">★★★★☆ (195)</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="text-center">
+          <img src="img8.webp" alt="Niacinamide Sunscreen" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">The Ultimate Summer Carry Kit
+          </h4>
+          <p class="text-gray-700 mt-1"> Sale priceRs. 1,399.00
+            Regular priceRs. 1,993.00</p>
+          <div class="mt-2 text-yellow-500">★★★★★ (2)</div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="text-center">
+          <img src="img9.webp" alt="Lip Gloss" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Bridal Makeup Kit
+          </h4>
+          <p class="text-gray-700 mt-1">Sale priceRs. 1,799.00
+            Regular priceRs. 3,470.00</p>
+          <div class="flex justify-center mt-2 space-x-1">
+            <span class="w-5 h-5 rounded-full border-2 border-black bg-[#9B404A]"></span>
+            <!-- <span class="w-5 h-5 rounded-full bg-[#E83C50]"></span> -->
+            <!-- <span class="w-5 h-5 rounded-full bg-[#7D2731]"></span> -->
+          </div>
+          <div class="mt-2 text-yellow-500">★★★★☆ (91)</div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="text-center">
+          <img src="img10.webp" alt="Kojic Sunscreen" class="rounded-md w-full h-auto" />
+          <h4 class="text-lg mt-4 font-medium">Fab 10 Beauty Essentials
+          </h4>
+          <p class="text-gray-700 mt-1"> Sale priceRs. 1,399.00
+            Regular priceRs. 2,273.00</p>
+          <div class="mt-2 text-yellow-500">★★★★☆ (1)</div>
+        </div>
+
+      </div>
+      <section class="bg-gradient-to-r from-pink-200 via-orange-100 to-orange-200 py-12 px-6 md:px-16">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+
+          <!-- Left: Image -->
+          <div class="w-full md:w-1/2">
+            <img src="img11.webp" alt="Cloud Nine Blush" class="w-full h-auto rounded-xl shadow-md">
+          </div>
+
+          <!-- Right: Text -->
+          <div class="w-full md:w-1/2 text-center md:text-left space-y-4">
+            <h3 class="text-sm tracking-widest text-gray-600 uppercase">Cloud Nine Niacinamide Glow <span
+                class="underline">Blush</span></h3>
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
+              Ready to take your blush game to <br class="hidden md:block" /> Cloud Nine?
+            </h2>
+            <p class="text-gray-700 text-base md:text-lg">
+              Blush brighter, care deeper with our Cloud Nine Niacinamide Glow Blush that gives your cheeks the look
+              straight out of a dream.
+              Infused with 8 botanical oils, Niacinamide, Kojic Acid, and Vitamin C, it pampers your skin while giving
+              you that lit-from-within flush.
+              <br /><br />
+              Just a dab of this weightless formula gives you glowing, radiant cheeks. Choose from playful shades like
+              peachy pink or flirty raspberry,
+              made to flatter every Indian skin tone. Glow-getter, are you in?
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="py-10 px-5 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">SUGAR PLAY RANGE</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Product 1 -->
+          <div class="text-center">
+            <img src="img12.webp" alt="lipoil" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">SUGAR PLAY MEGA HYPE COLOUR CHANGING LIP OIL</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 599.00</p>
+            <p class="text-yellow-500">★★★★★ <span class="text-black text-sm">(2)</span></p>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="text-center">
+            <img src="img13.webp" alt="Liquid Lipstick" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">SUGAR PLAY VIBE CHECK LIQUID LIPSTICK</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 499.00</p>
+            <div class="flex justify-center space-x-2 mb-1">
+              <span class="w-4 h-4 bg-pink-300 rounded-full border-2 border-black"></span>
+              <span class="w-4 h-4 bg-rose-700 rounded-full"></span>
+              <span class="w-4 h-4 bg-pink-600 rounded-full"></span>
+            </div>
+            <p class="text-yellow-500">★★★★★ <span class="text-black text-sm">(1)</span></p>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+            <img src="img14.webp" alt="Lip Gloss" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">SUGAR PLAY POWER DRIP LIP GLOSS</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 399.00</p>
+            <div class="flex justify-center space-x-2">
+              <span class="w-4 h-4 bg-pink-400 rounded-full border-2 border-black"></span>
+              <span class="w-4 h-4 bg-red-600 rounded-full"></span>
+              <span class="w-4 h-4 bg-orange-400 rounded-full"></span>
+              <span class="w-4 h-4 bg-amber-800 rounded-full"></span>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">SAVE 50%</span>
+            <img src="img15.webp" alt="Eyeshadow" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">SUGAR PLAY HIGH KEY CHROME EYESHADOW</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 249.00 <span class="line-through text-gray-400">Rs. 499.00</span></p>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <!-- <button class="bg-black text-white px-6 py-2 text-sm uppercase tracking-wide hover:bg-gray-800">
+        View All
+      </button> -->
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <section class="py-10 px-5 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">Look Here Is Eye Products Sale</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Product 1 -->
+          <div class="text-center">
+            <img src="eye1.webp" alt="eye" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Arch Arrival Brow DefinerArch
+            </h3>
+            <p class="text-sm mt-1 mb-2">Rs. 525.00</p>
+            <p class="text-yellow-500">★★★★★(18) <span class="text-black text-sm">(2)</span></p>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="text-center">
+            <img src="eye2.webp" alt="kajal" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Blend The Rules Eyeshadow Palette</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 1249.00</p>
+            <div class="flex justify-center space-x-2 mb-1">
+              <!-- <span class="w-4 h-4 bg-pink-300 rounded-full border-2 border-black"></span>
+        <span class="w-4 h-4 bg-rose-700 rounded-full"></span>
+        <span class="w-4 h-4 bg-pink-600 rounded-full"></span> -->
+            </div>
+            <p class="text-yellow-500">★★★★★(65) <span class="text-black text-sm">(1)</span></p>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+            <img src="eye3.webp" alt="eyeGloss" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Kohl Of Honour Intense Kajal</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 249.00</p>
+            <div class="flex justify-center space-x-2">
+              <!-- <span class="w-4 h-4 bg-pink-400 rounded-full border-2 border-black"></span>
+        <span class="w-4 h-4 bg-red-600 rounded-full"></span>
+        <span class="w-4 h-4 bg-orange-400 rounded-full"></span>
+        <span class="w-4 h-4 bg-amber-800 rounded-full"></span> -->
+            </div>
+            <p class="text-yellow-500">★★★★★(7) <span class="text-black text-sm">(1)</span></p>
+
+          </div>
+
+          <!-- Product 4 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">SAVE 50%</span>
+            <img src="img15.webp" alt="Eyeshadow" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Maximeyes Drama Magnetic Lashes & Eyeliner</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 1090.00 <span class="line-through text-gray-400">Rs. 499.00</span></p>
+            <p class="text-yellow-500">★★★★★(17) <span class="text-black text-sm">(1)</span></p>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+      <section class="py-10 px-5 max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Product 1 -->
+          <div class="text-center">
+            <img src="eye5.jpg" alt="eye" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Lash Mob Limitless Mascara
+            </h3>
+            <p class="text-sm mt-1 mb-2">Rs. 764.00</p>
+            <p class="text-yellow-500">★★★★★(1) <span class="text-black text-sm">(2)</span></p>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="text-center">
+            <img src="eye6.jpg" alt="kajal" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">SUGAR Play High Key Chrome Eyeshadow</h3>
+            <p class="text-sm mt-1 mb-2">Rs. 249</p>
+            <div class="flex justify-center space-x-2 mb-1">
+              <!-- <span class="w-4 h-4 bg-pink-300 rounded-full border-2 border-black"></span>
+        <span class="w-4 h-4 bg-rose-700 rounded-full"></span>
+        <span class="w-4 h-4 bg-pink-600 rounded-full"></span> -->
+            </div>
+            <p class="text-yellow-500">★★★★★(15) <span class="text-black text-sm">(1)</span></p>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+            <img src="eye7.jpg" alt="eyeGloss" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Arch Arrival Brow Styler
+            </h3>
+            <p class="text-sm mt-1 mb-2">Rs. 325.00</p>
+            <div class="flex justify-center space-x-2">
+              <!-- <span class="w-4 h-4 bg-pink-400 rounded-full border-2 border-black"></span>
+        <span class="w-4 h-4 bg-red-600 rounded-full"></span>
+        <span class="w-4 h-4 bg-orange-400 rounded-full"></span>
+        <span class="w-4 h-4 bg-amber-800 rounded-full"></span> -->
+            </div>
+            <p class="text-yellow-500">★★★★★(7) <span class="text-black text-sm">(1)</span></p>
+
+          </div>
+
+          <!-- Product 4 -->
+          <div class="text-center relative">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">SAVE 50%</span>
+            <img src="eye8.jpg" alt="Eyeshadow" class="mx-auto mb-4" />
+            <h3 class="uppercase text-sm font-medium">Blacklash Volumizing Mascara - 01 Black Up</h3>
+            <p class="text-sm mt-1 mb-2">priceRs. 499.00
+              <span class="line-through text-gray-400">Rs. 499.00</span>
+            </p>
+            <p class="text-yellow-500">★★★★★(17) <span class="text-black text-sm">(1)</span></p>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">Look Here Is Lip Products Sale</h2>
+
+
+      <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Product Card -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip4.webp" alt="Matte Attack Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">MATTE ATTACK TRANSFERPROOF LIPSTICK</h2>
+          <p class="text-center text-sm mt-1">Rs. 749.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-pink-900 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-red-500"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-500"></span>
+            <!-- Add more shades as needed -->
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(93)</span>
+          </div>
+        </div>
+
+        <!-- Repeat similar blocks for each product -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip3.webp" alt="Matte Crayon Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">MATTE AS HELL CRAYON LIPSTICK</h2>
+          <p class="text-center text-sm mt-1">Rs. 899.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-red-900 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-pink-300"></span>
+            <span class="w-5 h-5 rounded-full bg-red-500"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(1393)</span>
+          </div>
+        </div>
+
+        <!-- Mini Crayon -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip2.webp" alt="Mini Crayon Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">MATTE AS HELL MINI CRAYON</h2>
+          <p class="text-center text-sm mt-1">Rs. 599.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-red-800 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-400"></span>
+            <span class="w-5 h-5 rounded-full bg-pink-600"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(1375)</span>
+          </div>
+        </div>
+
+        <!-- Limited Edition -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip1.webp" alt="Limited Edition Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">LIMITED EDITION LONGWEAR</h2>
+          <p class="text-center text-sm mt-1">Rs. 599.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-pink-700 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-red-400"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-500"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(768)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Product Card -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip5.webp" alt="Matte Attack Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">Mousse Muse Lip Cream</h2>
+          <p class="text-center text-sm mt-1">Rs. 599.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-pink-900 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-red-500"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-500"></span>
+            <!-- Add more shades as needed -->
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(93)</span>
+          </div>
+        </div>
+
+        <!-- Repeat similar blocks for each product -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip6.jpg" alt="Matte Crayon Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">SUGAR Drop A Tint Lip Oil</h2>
+          <p class="text-center text-sm mt-1">Rs. 599.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-red-900 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-pink-300"></span>
+            <span class="w-5 h-5 rounded-full bg-red-500"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(1393)</span>
+          </div>
+        </div>
+
+        <!-- Mini Crayon -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip7.webp" alt="Mini Crayon Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">Matte Attack Transferproof Lipstick + Dream Cover SPF15 Mattifying
+            Compact</h2>
+          <p class="text-center text-sm mt-1">Rs. 599.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-red-800 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-400"></span>
+            <span class="w-5 h-5 rounded-full bg-pink-600"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(1375)</span>
+          </div>
+        </div>
+
+        <!-- Limited Edition -->
+        <div class="border rounded-xl shadow-md p-4">
+          <div class="relative">
+            <img src="lip8.webp" alt="Limited Edition Lipstick" class="rounded-lg">
+            <span class="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">ON SALE</span>
+          </div>
+          <h2 class="mt-4 font-semibold text-center">Seal The Show Lip Primer</h2>
+          <p class="text-center text-sm mt-1">Rs. 649.00</p>
+          <div class="flex justify-center flex-wrap gap-1 mt-2">
+            <span class="w-5 h-5 rounded-full bg-pink-700 border-2 border-black"></span>
+            <span class="w-5 h-5 rounded-full bg-red-400"></span>
+            <span class="w-5 h-5 rounded-full bg-purple-500"></span>
+          </div>
+          <div class="text-center mt-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-sm">(768)</span>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="bg-white text-center p-6">
+        <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">Look Here Is Face Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+          <!-- Product 1 -->
+          <div>
+            <img src="face1.webp" alt="Foundation Stick">
+            <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Ace of Face Foundation Stick</h3>
+            <p class="text-sm mt-1">Rs. 1,149.00</p>
+            <div class="flex justify-center mt-2 gap-1">
+              <!-- Shade circles -->
+              <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+              <div class="w-4 h-4 bg-[#f1cba9] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#e6bb8d] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#dab07b] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#c8946f] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#b57e5a] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#a0694b] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#8c543e] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#6e3f2e] rounded-full"></div>
+            </div>
+            <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (335)</p>
+          </div>
+
+          <!-- Product 2 -->
+          <div>
+            <img src="face2.webp" alt="Dewy Foundation">
+            <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Ace of Face Dewy Foundation</h3>
+            <p class="text-sm mt-1">Rs. 799.00</p>
+            <div class="flex justify-center mt-2 gap-1">
+              <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+              <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#b67865] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#a15d51] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#8d453e] rounded-full"></div>
+            </div>
+            <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (786)</p>
+          </div>
+
+          <!-- Product 3 -->
+          <div>
+            <img src="face3.jpg" alt="Mattifying Compact">
+            <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Dream Cover SPF15 Mattifying Compact</h3>
+            <p class="text-sm mt-1">Rs. 549.00</p>
+            <div class="flex justify-center mt-2 gap-1">
+              <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+              <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+            </div>
+            <p class="mt-2 text-sm text-gray-700">★★★★★ (103)</p>
+          </div>
+
+          <!-- Product 4 -->
+          <div>
+            <img src="face4.webp" alt="Primer">
+            <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Base of Glory Pore Minimizing Primer</h3>
+            <p class="text-sm mt-1">Rs. 849.00</p>
+            <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (41)</p>
+          </div>
+
+        </div>
+
+
+      </div>
+      <br><br>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <!-- Product 1 -->
+        <div>
+          <img src="face5.jpg" alt="Foundation Stick">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Set The Tone Tinted Powder</h3>
+          <p class="text-sm mt-1">Rs. 749.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- Shade circles -->
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f1cba9] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e6bb8d] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#dab07b] rounded-full"></div>
+           <div class="w-4 h-4 bg-[#c8946f] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#b57e5a] rounded-full"></div> -->
+            <div class="w-4 h-4 bg-[#a0694b] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#8c543e] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#6e3f2e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (335)</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div>
+          <img src="face6.webp" alt="Dewy Foundation">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Aquaholic Hydrating Foundation</h3>
+          <p class="text-sm mt-1">Rs. 899.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#b67865] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#a15d51] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#8d453e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (786)</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div>
+          <img src="face7.webp" alt="Mattifying Compact">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Mettle Cream To Powder Foundation</h3>
+          <p class="text-sm mt-1">Rs. 599.00</p>
+          <!-- <div class="flex justify-center mt-2 gap-1">
+        <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+      </div> -->
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★★ (103)</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div>
+          <img src="face9.webp" alt="Primer">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Aquaholic Priming Moisturizer
+          </h3>
+          <p class="text-sm mt-1">Rs. 649.00</p>
+          <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (41)</p>
+        </div>
+
+      </div>
+
+
+      <BR><BR><BR>
+
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <!-- Product 1 -->
+        <div>
+          <img src="face10.webp" alt="Foundation Stick">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Set The Tone Tinted Powder</h3>
+          <p class="text-sm mt-1">Rs. 749.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- Shade circles -->
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f1cba9] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e6bb8d] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#dab07b] rounded-full"></div>
+           <div class="w-4 h-4 bg-[#c8946f] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#b57e5a] rounded-full"></div> -->
+            <div class="w-4 h-4 bg-[#a0694b] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#8c543e] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#6e3f2e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (335)</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div>
+          <img src="face11.webp" alt="Dewy Foundation">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Aquaholic Hydrating Foundation</h3>
+          <p class="text-sm mt-1">Rs. 899.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#b67865] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#a15d51] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#8d453e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (786)</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div>
+          <img src="face12.webp" alt="Mattifying Compact">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Mettle Cream To Powder Foundation</h3>
+          <p class="text-sm mt-1">Rs. 599.00</p>
+          <!-- <div class="flex justify-center mt-2 gap-1">
+        <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+      </div> -->
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★★ (103)</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div>
+          <img src="face13.webp" alt="Primer">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">SPF 50 Sunscreen with Vitamin C and Hyaluronic
+            Acid
+          </h3>
+          <p class="text-sm mt-1">Rs. 174.00</p>
+          <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (4)</p>
+        </div>
+
+
+      </div>
+
+      <br>
+      <br><br>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <!-- Product 1 -->
+        <div>
+          <img src="face14.webp" alt="Foundation Stick">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Bling Leader Illuminating Moisturizer</h3>
+          <p class="text-sm mt-1">Rs. 699.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- Shade circles -->
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f1cba9] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e6bb8d] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#dab07b] rounded-full"></div>
+           <div class="w-4 h-4 bg-[#c8946f] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#b57e5a] rounded-full"></div> -->
+            <div class="w-4 h-4 bg-[#a0694b] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#8c543e] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#6e3f2e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (25)</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div>
+          <img src="face15.webp" alt="Dewy Foundation">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Contour De Force Face Palette</h3>
+          <p class="text-sm mt-1">Rs. 799.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+            <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+            <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+            <!-- <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#b67865] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#a15d51] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#8d453e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (106)</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div>
+          <img src="face16.webp" alt="Mattifying Compact">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Contour De Force Mini Blush</h3>
+          <p class="text-sm mt-1">Rs. 375.00</p>
+          <!-- <div class="flex justify-center mt-2 gap-1">
+        <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+        <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+      </div> -->
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★★ (108)</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div>
+          <img src="face17.webp" alt="Primer">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Mettle Priming Balm
+          </h3>
+          <p class="text-sm mt-1">Rs. 548.00</p>
+          <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (2)</p>
+        </div>
+
+      </div>
+      <br><br>
+      <br>
+      <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">Look Here Is Nail Polish Sale</h2>
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <!-- Product 1 -->
+        <div>
+          <img src="nail.webp" alt="Foundation Stick">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer - Chic Contrast Duo</h3>
+          <p class="text-sm mt-1">Rs. 349.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- Shade circles -->
+
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (25)</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div>
+          <img src="nail1.webp" alt="Dewy Foundation">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer - Classic Duo
+          </h3>
+          <p class="text-sm mt-1">Rs. 349.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (106)</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div>
+          <img src="nail2.webp" alt="Mattifying Compact">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe - Monochrome blues Duo</h3>
+          <p class="text-sm mt-1">Rs. 349.00</p>
+
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★★ (108)</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div>
+          <img src="nail3.webp" alt="Primer">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer - Artsy Trio
+          </h3>
+          <p class="text-sm mt-1">Rs. 499.00</p>
+          <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (2)</p>
+        </div>
+
+      </div>
+      <br><br>
+
+      <!-- </div> -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <!-- Product 1 -->
+        <div>
+          <img src="nail4.webp" alt="Foundation Stick">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer Matte</h3>
+          <p class="text-sm mt-1">Rs. 249.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- Shade circles -->
+            <!-- <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+      <div class="w-4 h-4 bg-[#f1cba9] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#e6bb8d] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#dab07b] rounded-full"></div>
+         <div class="w-4 h-4 bg-[#c8946f] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#b57e5a] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#a0694b] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#8c543e] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#6e3f2e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (25)</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div>
+          <img src="nail5.webp" alt="Dewy Foundation">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer - Bestselling Trio
+          </h3>
+          <p class="text-sm mt-1">Rs. 597.00</p>
+          <div class="flex justify-center mt-2 gap-1">
+            <!-- <div class="w-4 h-4 border-2 border-black rounded-full"></div>
+      <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div> -->
+            <!-- <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#b67865] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#a15d51] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#8d453e] rounded-full"></div> -->
+          </div>
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★☆ (106)</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div>
+          <img src="nail6.webp" alt="Mattifying Compact">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer - Urban Hues Trio</h3>
+          <p class="text-sm mt-1">Rs. 499.00</p>
+          <!-- <div class="flex justify-center mt-2 gap-1">
+      <div class="w-4 h-4 bg-[#f3d6c1] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#e8c1a1] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#d9a88b] rounded-full"></div>
+      <div class="w-4 h-4 bg-[#c78f75] rounded-full"></div>
+    </div> -->
+          <p class="mt-2 text-sm text-gray-700 text-center">★★★★★ (108)</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div>
+          <img src="nail7.webp" alt="Primer">
+          <h3 class="text-sm font-medium mt-2 uppercase tracking-wide">Tip Tac Toe Nail Lacquer Classic
+          </h3>
+          <p class="text-sm mt-1">Rs. 199.00</p>
+          <p class="mt-4 text-sm text-gray-700 text-center">★★★★★ (2)</p>
+        </div>
+
+        <br><br>
+      </div>
+      <marquee>
+      <div class="w-full  flex justify-center items-center">
+        <span class=" w-fit bg-pink-100 p-4"><b>Please be careful of fraudulent calls & SMSes! EVERFOREVER will never
+            call you with
+            offers pertaining to free gifts or prizes or ask for payment through links</b></span>
+      </div>
+      </marquee>
+
+      <div class="last">
+        <div class="lastDiv">
+          <b> Who are we?</b><br>
+          Careers<br><br>
+          Authenticity<br><br>
+          Press<br><br>
+          Testimonials<br><br>
+          Nykaa CSR<br><br>
+          Responsible Disclosure<br><br>
+          Investor Relati ons<br><br>
+          Link to Smart ODR<br> <br>
+        </div>
+        <div class="lastDiv">
+          <b> Help</b><br><br>
+          Contact Us<br><br>
+          Frequently asked questions<br><br>
+          Store Locator<br><br>
+          Cancellation & Return<br><br>
+          Shipping & Delivery<br><br>
+          Sell on Nykaa<br><br>
+
+        </div>
+        <div class="lastDiv">
+          <b> Inspire Me</b><br><br>
+          Beauty Book<br><br>
+          Nykaa Network<br><br>
+          Buying Guides<br><br>
+
+
+        </div>
+        <div class="lastDiv">
+          <b> Links</b><br><br>
+          Offer Zone<br><br>
+          New Launches<br><br>
+          Nykaa Man<br><br>
+          Nykaa Fashion<br><br>
+          Nykaa Pro<br><br>
+          Sitemap<br><br>
+
+
+        </div>
+        <div class="lastDiv">
+          <b> Top Categories</b><br><br>
+          Makeup<br><br>
+          Skin<br><br>
+          Hair<br><br>
+          Bath & Body<br><br>
+          Fragrance<br><br>
+          Natural<br><br>
+
+
+        </div>
+        <div class="lastDiv">
+
+        </div>
+      </div>
+      <div class="end">
+        <div class="popular">
+          Popular Links<br><br>
+          lipstick,highlighter,hair serum,concealer,face mask,biotique,lip gloss,perfume for women,facial
+          kit,bb cream,victoria secret,love beauty and planet shampoo,eyeliner,hair mask,face wash for oily
+          skin,ordinary,toner,eyeshadow palette,cleanser,chemist at play,mascara,loreal professional,hair
+          extensions,olay cream,fogg,lip tint,under eye cream,wax strips,shower gel,sunscreen for face,insight
+          cosmetics,face foundation,hair removal machine,mac foundation,choker,oud perfume,makeup
+          pouch,olaplex,body mist,wella shampoo,huda beauty foundation,night cream,facewash,nyx,schwarzkopf
+          shampoo,blue heaven,peel off mask,best lip balm,face scrub,Cetaphil Face Wash,Mederma
+          Cream,Multivitamins Tablet,Himalaya Face Wash,Garnier Face Wash,Hair Color For Women,Cetaphil
+          Moisturizers,Ponds Face Wash,Streax Hair Serum,Nivea Body Lotions,Vaseline Body Lotions,Sugar
+          Lipstick,Biotin Tablet,Aqualogica Sunscreen,Salicylic Acid Face Wash,Fogg Perfume,Clean And Clear
+          Face Wash,Neutrogena Sunscreen,Pears Soaps,Hair Color For Men,Dry Cleansers,Face Serum
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
